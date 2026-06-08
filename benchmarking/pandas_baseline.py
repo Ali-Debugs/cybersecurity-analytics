@@ -43,12 +43,10 @@ def run_pandas_benchmark():
     # ── 1. Attack Distribution ────────────────────────────────────
     print(f"\n{Fore.CYAN}[1] Attack Distribution...")
     t0 = time.time()
-    attack_dist = (
-        df["Attack_Category"]
-        .value_counts()
-        .reset_index()
-        .rename(columns={"index": "Attack_Category", "Attack_Category": "Count"})
-    )
+    vc = df["Attack_Category"].value_counts().reset_index()
+    vc.columns = ["Attack_Category", "Count"]
+    attack_dist = vc.copy()
+    attack_dist["Count"] = attack_dist["Count"].astype(int)
     attack_dist["Percentage"] = (attack_dist["Count"] / len(df) * 100).round(2)
     timings["attack_distribution"] = round(time.time() - t0, 3)
     results["attack_distribution"] = attack_dist.to_dict("records")
