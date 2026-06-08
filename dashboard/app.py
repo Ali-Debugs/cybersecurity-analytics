@@ -16,7 +16,7 @@ with st.sidebar:
     st.divider()
     st.markdown("Dataset: CICIDS2017")
     st.divider()
-    st.caption("University PDC Project · 2026")
+    st.caption("PDC Project by Ali Jabbar")
 
 st.title("Distributed Cybersecurity Log Analytics Platform")
 st.caption("CICIDS2017 · Hadoop HDFS · Apache Spark")

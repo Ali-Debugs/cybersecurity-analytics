@@ -1,161 +1,183 @@
-# 🛡️ Distributed Cybersecurity Log Analytics Platform
+# Distributed Cybersecurity Log Analytics Platform
 
-> **University PDC Project** — Hadoop HDFS + Apache Spark + Streamlit Dashboard
+A university PDC project that runs real network intrusion data through Hadoop HDFS and Apache Spark to detect attack patterns, rank threat actors, and benchmark distributed vs single-node processing.
 
-## Architecture
+Built by **Ali Jabbar** — 2026
 
-```
-CICIDS2017 Dataset
-       ↓
-Preprocessing (Python / Pandas)
-       ↓
-Hadoop HDFS 3.5  (distributed storage, pseudo-distributed on localhost:19000)
-       ↓
-Apache Spark 4.1  (PySpark distributed analytics)
-       ├── Attack Distribution Analysis
-       ├── Suspicious IP Detection
-       ├── Brute Force / Failed Login Analysis
-       └── Traffic Pattern Analysis
-       ↓
-Streamlit Dashboard  (5 pages, Plotly charts)
-       ↓
-Streamlit Community Cloud  (public deployment)
-```
+---
 
-## Stack
+## What this project does
 
-| Layer | Technology | Version |
-|-------|-----------|---------|
-| Storage | Apache Hadoop HDFS | 3.5.0 |
-| Processing | Apache Spark (PySpark) | 4.1.1 |
-| Language | Python | 3.12 |
-| Dashboard | Streamlit | 1.35 |
-| Visualisation | Plotly | 5.22 |
-| Runtime | Java | 17 (LTS) |
+It takes the CICIDS2017 dataset (2.57 million real network flow records from 5 days of simulated attacks at the Canadian Institute for Cybersecurity) and runs it through a full distributed pipeline:
+
+1. Raw CSV files get cleaned and merged into one combined file
+2. That file gets uploaded to Hadoop HDFS (distributed block storage)
+3. Apache Spark reads it back in parallel across all CPU cores
+4. Five analytics jobs run: attack distribution, suspicious IP detection, brute force analysis, traffic patterns, and advanced SQL/window/join operations
+5. Results are saved as JSON and displayed on a Streamlit dashboard
+
+The whole thing runs on a single machine in pseudo-distributed mode — HDFS and Spark both behave like a real cluster, just with one node instead of many.
+
+---
 
 ## Dataset
 
-**CICIDS2017** — Canadian Institute for Cybersecurity Intrusion Detection Dataset 2017
+**CICIDS2017** — Canadian Institute for Cybersecurity, 2017
 
-- **Download:** https://www.unb.ca/cic/datasets/ids-2017.html
-- **Size:** ~2.3 GB (8 CSV files across 5 days)
-- **Records:** ~2.8 million network flows
-- **Labels:** 14 attack types + Benign traffic
+- 8 CSV files covering Monday through Friday (July 3–7, 2017)
+- 2,572,640 network flows after cleaning
+- 15 distinct attack types: DoS Hulk, DDoS, PortScan, FTP-Patator, SSH-Patator, Bot, Web Attack variants, Infiltration, Heartbleed, and normal Benign traffic
+- The ML-ready version has no IP addresses (removed by UNB for privacy) — representative ranges are assigned per attack type based on the documented lab topology
 
-### Why CICIDS2017?
-- Gold standard academic cybersecurity dataset
-- Real network traffic with labelled attacks
-- Covers DoS, DDoS, Brute Force, Web Attacks, Infiltration, Port Scans
-- Used in 500+ academic papers
+Download from: https://www.unb.ca/cic/datasets/ids-2017.html  
+Place the 8 CSV files in `data/raw/` before running the pipeline.
 
-## Quick Start
+---
 
-### 1. Prerequisites
-```bash
-# Verify Java 17
-java -version   # should show 17.x
+## Stack
 
-# Verify Hadoop
-hadoop version  # should show 3.5.x
+| Layer | Tool | Version |
+|---|---|---|
+| Distributed Storage | Apache Hadoop HDFS | 3.5 |
+| Distributed Processing | Apache Spark / PySpark | 4.1.1 |
+| Language | Python | 3.12 |
+| Dashboard | Streamlit | 1.35 |
+| Charts | Plotly | 5.22 |
+| Runtime | Java | 17 |
 
-# Verify Spark
-spark-shell --version  # should show 4.1.x
-```
-
-### 2. Start HDFS
-```bash
-start-dfs.sh
-jps   # should show NameNode, DataNode, SecondaryNameNode
-```
-
-### 3. Set up Python environment
-```bash
-cd ~/Projects/cybersecurity-analytics
-source venv/bin/activate
-# (venv already created with Python 3.12)
-```
-
-### 4. Download dataset
-Place CICIDS2017 CSV files in `data/raw/`
-
-### 5. Run preprocessing
-```bash
-python ingestion/preprocess.py
-```
-
-### 6. Upload to HDFS
-```bash
-python ingestion/hdfs_upload.py
-```
-
-### 7. Run Spark analytics
-```bash
-python analytics/run_all_analytics.py
-```
-
-### 8. Run benchmarks
-```bash
-python benchmarking/pandas_baseline.py
-python benchmarking/spark_benchmark.py
-python benchmarking/compare_results.py
-```
-
-### 9. Launch dashboard
-```bash
-streamlit run dashboard/app.py
-# Opens at http://localhost:8501
-```
+---
 
 ## Project Structure
 
 ```
 cybersecurity-analytics/
-├── config/               # Spark & Hadoop connection settings
-├── data/                 # Dataset (not in git — download separately)
-├── ingestion/            # Preprocessing + HDFS upload scripts
-├── analytics/            # PySpark analytics modules
-├── benchmarking/         # Pandas vs Spark performance comparison
-├── dashboard/            # Streamlit multi-page dashboard
-├── results/              # JSON outputs from Spark jobs
-└── docs/                 # Architecture diagrams, screenshots
+├── ingestion/
+│   └── preprocess.py          # cleans CICIDS2017, merges 8 files into combined.csv
+├── analytics/
+│   ├── spark_session.py       # shared SparkSession factory (HDFS-backed)
+│   ├── attack_distribution.py
+│   ├── suspicious_ip.py
+│   ├── failed_logins.py
+│   ├── traffic_analysis.py
+│   ├── advanced_analytics.py  # Spark SQL, window functions, join, UDF, percentiles
+│   └── run_all_analytics.py   # runs all 5 jobs with one shared session
+├── benchmarking/
+│   ├── spark_benchmark.py
+│   ├── pandas_baseline.py
+│   └── compare_results.py
+├── dashboard/
+│   ├── app.py
+│   ├── pages/
+│   │   ├── 01_overview.py
+│   │   ├── 02_threat_analytics.py
+│   │   ├── 03_suspicious_ips.py
+│   │   ├── 04_attack_distribution.py
+│   │   ├── 05_benchmarks.py
+│   │   └── 06_advanced_analytics.py
+│   └── utils/data_loader.py
+├── data/                      # not in git — too large, download separately
+├── results/                   # not in git — generated by analytics jobs
+└── requirements.txt
 ```
 
-## PDC Concepts Demonstrated
+---
 
-| Concept | Where |
-|---------|-------|
-| Parallel Processing | Spark `local[*]` — all CPU cores |
-| Distributed Storage | HDFS blocks + replication |
-| Data Partitioning | Spark RDD/DataFrame partitions |
-| Fault Tolerance | HDFS replication + Spark lineage |
-| Scalability | `local[*]` → cluster with zero code changes |
-| Lazy Evaluation | Spark DAG builds before execution |
-| In-Memory Computing | Spark `.cache()` |
+## Running it
 
-## HDFS Directory Structure
+### Prerequisites
 
+- Java 17
+- Hadoop 3.5 (`brew install hadoop` on macOS)
+- Apache Spark 4.1 (`brew install apache-spark`)
+- Python 3.12
+
+### Setup
+
+```bash
+git clone https://github.com/Ali-Debugs/cybersecurity-analytics.git
+cd cybersecurity-analytics
+
+python3.12 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
-/cybersecurity/
-├── raw/          ← original uploaded CSVs
-├── processed/    ← cleaned CSVs (used by Spark)
-└── results/      ← Spark output files
+
+### Start HDFS
+
+```bash
+# First time only
+hdfs namenode -format
+
+start-dfs.sh
+jps   # should show NameNode and DataNode
 ```
 
-## Screenshots Required
+### Run the pipeline
 
-| # | Screenshot | Command |
-|---|-----------|---------|
-| 01 | Java verified | `java -version` |
-| 02 | Hadoop verified | `hadoop version` |
-| 03 | HDFS startup | `jps` |
-| 04 | NameNode Web UI | http://localhost:9870 |
-| 05 | DataNode running | http://localhost:9870/dfshealth.html#tab-datanode |
-| 06 | Dataset in HDFS | `hdfs dfs -ls /cybersecurity/processed` |
-| 07 | Spark verified | `spark-shell --version` |
-| 08 | Spark reads HDFS | pyspark shell |
-| 09 | Analytics output | terminal |
-| 10 | Dashboard running | http://localhost:8501 |
+```bash
+source venv/bin/activate
+
+# 1. Clean and merge raw CSVs
+PYTHONPATH=. python3 ingestion/preprocess.py
+
+# 2. Upload to HDFS
+hdfs dfs -mkdir -p /cybersecurity/processed
+hdfs dfs -put data/processed/combined.csv /cybersecurity/processed/combined.csv
+
+# 3. Run Spark analytics
+PYTHONPATH=. python3 analytics/run_all_analytics.py
+
+# 4. Run benchmarks
+PYTHONPATH=. python3 benchmarking/spark_benchmark.py
+PYTHONPATH=. python3 benchmarking/pandas_baseline.py
+PYTHONPATH=. python3 benchmarking/compare_results.py
+
+# 5. Dashboard
+streamlit run dashboard/app.py --server.port 8502
+# http://localhost:8502
+```
+
+---
+
+## What Spark actually does here
+
+The advanced analytics job runs six distinct distributed operations on the full 2.57M-row dataset:
+
+- **Spark SQL on a temp view** — registers the HDFS DataFrame as a SQL table and queries it through Spark's Catalyst optimizer
+- **RANK() window function** — partitions by attack type and ranks source IPs by flow count within each partition across cores
+- **LAG() window function** — computes hour-over-hour change in attack volume to spot escalation
+- **Two-table distributed join** — builds an IP threat profile and a port behaviour table separately, then joins them on Source IP
+- **Custom UDF** — a Python severity classifier gets serialised and sent to every executor partition to run row-by-row in parallel
+- **PERCENTILE_APPROX** — computes p50/p90/p99 of flow bytes across 2.57M rows using a distributed T-Digest sketch
+
+---
+
+## Benchmark results
+
+Measured on Apple Silicon MacBook, 2,572,640 rows:
+
+| Task | Pandas | Spark | Winner |
+|---|---|---|---|
+| Data load | 29.2s | 7.6s | Spark (3.83x) |
+| Attack distribution | 0.04s | 7.8s | Pandas |
+| Suspicious IP | 0.66s | 0.55s | Spark (1.2x) |
+| Failed logins | 0.01s | 0.16s | Pandas |
+| Traffic analysis | 0.10s | 0.96s | Pandas |
+| **Total** | **30.0s** | **17.1s** | **Spark (1.75x)** |
+
+Spark wins the full pipeline because HDFS parallel read is 3.83x faster than `pd.read_csv` at this row count, and that I/O cost dominates everything else.
+
+---
+
+## Known gotchas
+
+- HDFS is configured on port 19000 instead of the default 9000 — port 9000 was taken by a running Jupyter kernel on this machine
+- Spark 4.x only works with Java 17 — Java 11 throws a class file version error at startup
+- The CICIDS2017 ML-ready CSVs have no IP columns — UNB stripped them. The IPs in this project are assigned per attack type using ranges from the original paper's network topology diagram
+- Python 3.14 breaks protobuf/Streamlit — stick with 3.12
+
+---
 
 ## Author
 
-Ali — University PDC Project, 2026
+Ali Jabbar — PDC Project, 2026

@@ -10,7 +10,7 @@ from dashboard.utils.data_loader import get_advanced_analytics, results_availabl
 st.set_page_config(page_title="Advanced Analytics", layout="wide")
 
 st.title("Advanced Analytics")
-st.caption("Spark SQL · Window Functions · Joins · UDF · Percentiles — on 2,000,000 rows from HDFS")
+st.caption("Spark SQL · Window Functions · Joins · UDF · Percentiles — on 2,572,640 rows from HDFS")
 
 ADVAN_PATH = os.path.join(os.path.dirname(__file__), "..", "..", "results", "analytics", "advanced_analytics.json")
 if not os.path.exists(ADVAN_PATH):
