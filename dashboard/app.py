@@ -29,5 +29,6 @@ st.markdown("""
 - **Threat Analytics** — traffic and brute force patterns
 - **Suspicious IPs** — source addresses with high attack activity
 - **Attack Distribution** — breakdown by attack type
+- **Advanced Analytics** — Spark SQL, window functions, joins, UDF
 - **Benchmarks** — Spark vs Pandas processing time
 """)

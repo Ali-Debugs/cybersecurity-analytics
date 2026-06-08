@@ -16,6 +16,7 @@ import analytics.attack_distribution as ad
 import analytics.suspicious_ip       as si
 import analytics.failed_logins       as fl
 import analytics.traffic_analysis    as ta
+import analytics.advanced_analytics  as adv
 
 RESULTS_DIR = os.path.join(os.path.dirname(__file__), "..", "results", "analytics")
 
@@ -36,6 +37,7 @@ def main():
         ("Suspicious IP",        si.run),
         ("Failed Logins",        fl.run),
         ("Traffic Analysis",     ta.run),
+        ("Advanced Analytics",   adv.run),
     ]
 
     for name, fn in jobs:

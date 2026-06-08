@@ -45,6 +45,10 @@ def get_job_timings() -> dict:
     return _load_json(os.path.join(ANALYTICS_DIR, "job_timings.json"))
 
 
+def get_advanced_analytics() -> dict:
+    return _load_json(os.path.join(ANALYTICS_DIR, "advanced_analytics.json"))
+
+
 def results_available() -> bool:
     """True if at least the attack distribution result exists."""
     return os.path.exists(
