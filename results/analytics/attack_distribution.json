@@ -1,0 +1,112 @@
+{
+  "total_records": 2572640,
+  "attack_categories": [
+    {
+      "Attack_Category": "Benign",
+      "Count": 2146899,
+      "Percentage": 83.45
+    },
+    {
+      "Attack_Category": "DoS",
+      "Count": 193745,
+      "Percentage": 7.53
+    },
+    {
+      "Attack_Category": "DDoS",
+      "Count": 128014,
+      "Percentage": 4.98
+    },
+    {
+      "Attack_Category": "Port Scan",
+      "Count": 90694,
+      "Percentage": 3.53
+    },
+    {
+      "Attack_Category": "Brute Force",
+      "Count": 9150,
+      "Percentage": 0.36
+    },
+    {
+      "Attack_Category": "Web Attack",
+      "Count": 2143,
+      "Percentage": 0.08
+    },
+    {
+      "Attack_Category": "Bot",
+      "Count": 1948,
+      "Percentage": 0.08
+    },
+    {
+      "Attack_Category": "Infiltration",
+      "Count": 36,
+      "Percentage": 0.0
+    },
+    {
+      "Attack_Category": "Heartbleed",
+      "Count": 11,
+      "Percentage": 0.0
+    }
+  ],
+  "label_distribution": [
+    {
+      "Label": "BENIGN",
+      "Count": 2146899
+    },
+    {
+      "Label": "DoS Hulk",
+      "Count": 172846
+    },
+    {
+      "Label": "DDoS",
+      "Count": 128014
+    },
+    {
+      "Label": "PortScan",
+      "Count": 90694
+    },
+    {
+      "Label": "DoS GoldenEye",
+      "Count": 10286
+    },
+    {
+      "Label": "FTP-Patator",
+      "Count": 5931
+    },
+    {
+      "Label": "DoS slowloris",
+      "Count": 5385
+    },
+    {
+      "Label": "DoS Slowhttptest",
+      "Count": 5228
+    },
+    {
+      "Label": "SSH-Patator",
+      "Count": 3219
+    },
+    {
+      "Label": "Bot",
+      "Count": 1948
+    },
+    {
+      "Label": "Web Attack \u2013 Brute Force",
+      "Count": 1470
+    },
+    {
+      "Label": "Web Attack \u2013 XSS",
+      "Count": 652
+    },
+    {
+      "Label": "Infiltration",
+      "Count": 36
+    },
+    {
+      "Label": "Web Attack \u2013 Sql Injection",
+      "Count": 21
+    },
+    {
+      "Label": "Heartbleed",
+      "Count": 11
+    }
+  ]
+}

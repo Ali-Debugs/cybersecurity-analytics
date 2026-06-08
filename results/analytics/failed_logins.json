@@ -1,0 +1,145 @@
+{
+  "total_brute_force_flows": 9150,
+  "top_targeted_ports": [
+    {
+      "Destination Port": 21,
+      "BruteFlows": 5930
+    },
+    {
+      "Destination Port": 22,
+      "BruteFlows": 3219
+    },
+    {
+      "Destination Port": 80,
+      "BruteFlows": 1
+    }
+  ],
+  "top_attacking_ips": [
+    {
+      "Source IP": "192.168.10.3",
+      "AttackFlows": 1378
+    },
+    {
+      "Source IP": "192.168.10.7",
+      "AttackFlows": 1351
+    },
+    {
+      "Source IP": "192.168.10.6",
+      "AttackFlows": 1327
+    },
+    {
+      "Source IP": "192.168.10.5",
+      "AttackFlows": 1307
+    },
+    {
+      "Source IP": "192.168.10.2",
+      "AttackFlows": 1279
+    },
+    {
+      "Source IP": "192.168.10.1",
+      "AttackFlows": 1255
+    },
+    {
+      "Source IP": "192.168.10.4",
+      "AttackFlows": 1253
+    }
+  ],
+  "hourly_pattern": [
+    {
+      "Hour": 0,
+      "BruteFlows": 356
+    },
+    {
+      "Hour": 1,
+      "BruteFlows": 358
+    },
+    {
+      "Hour": 2,
+      "BruteFlows": 379
+    },
+    {
+      "Hour": 3,
+      "BruteFlows": 383
+    },
+    {
+      "Hour": 4,
+      "BruteFlows": 400
+    },
+    {
+      "Hour": 5,
+      "BruteFlows": 413
+    },
+    {
+      "Hour": 6,
+      "BruteFlows": 368
+    },
+    {
+      "Hour": 7,
+      "BruteFlows": 393
+    },
+    {
+      "Hour": 8,
+      "BruteFlows": 371
+    },
+    {
+      "Hour": 9,
+      "BruteFlows": 353
+    },
+    {
+      "Hour": 10,
+      "BruteFlows": 372
+    },
+    {
+      "Hour": 11,
+      "BruteFlows": 368
+    },
+    {
+      "Hour": 12,
+      "BruteFlows": 366
+    },
+    {
+      "Hour": 13,
+      "BruteFlows": 381
+    },
+    {
+      "Hour": 14,
+      "BruteFlows": 375
+    },
+    {
+      "Hour": 15,
+      "BruteFlows": 367
+    },
+    {
+      "Hour": 16,
+      "BruteFlows": 379
+    },
+    {
+      "Hour": 17,
+      "BruteFlows": 430
+    },
+    {
+      "Hour": 18,
+      "BruteFlows": 378
+    },
+    {
+      "Hour": 19,
+      "BruteFlows": 432
+    },
+    {
+      "Hour": 20,
+      "BruteFlows": 394
+    },
+    {
+      "Hour": 21,
+      "BruteFlows": 367
+    },
+    {
+      "Hour": 22,
+      "BruteFlows": 362
+    },
+    {
+      "Hour": 23,
+      "BruteFlows": 405
+    }
+  ]
+}

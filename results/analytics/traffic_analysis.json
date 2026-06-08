@@ -1,0 +1,1139 @@
+{
+  "protocol_distribution": [
+    {
+      "Protocol": 6,
+      "FlowCount": 1635140
+    },
+    {
+      "Protocol": 17,
+      "FlowCount": 937500
+    }
+  ],
+  "top_ports": [
+    {
+      "Destination Port": 53,
+      "TotalFlows": 914559,
+      "AttackFlows": 101,
+      "Attack_Ratio": 0.0
+    },
+    {
+      "Destination Port": 80,
+      "TotalFlows": 546337,
+      "AttackFlows": 324272,
+      "Attack_Ratio": 59.4
+    },
+    {
+      "Destination Port": 443,
+      "TotalFlows": 475446,
+      "AttackFlows": 146,
+      "Attack_Ratio": 0.0
+    },
+    {
+      "Destination Port": 123,
+      "TotalFlows": 22941,
+      "AttackFlows": 1,
+      "Attack_Ratio": 0.0
+    },
+    {
+      "Destination Port": 22,
+      "TotalFlows": 11289,
+      "AttackFlows": 3462,
+      "Attack_Ratio": 30.7
+    },
+    {
+      "Destination Port": 21,
+      "TotalFlows": 10052,
+      "AttackFlows": 6173,
+      "Attack_Ratio": 61.4
+    },
+    {
+      "Destination Port": 389,
+      "TotalFlows": 6045,
+      "AttackFlows": 88,
+      "Attack_Ratio": 1.5
+    },
+    {
+      "Destination Port": 88,
+      "TotalFlows": 5309,
+      "AttackFlows": 87,
+      "Attack_Ratio": 1.6
+    },
+    {
+      "Destination Port": 137,
+      "TotalFlows": 3448,
+      "AttackFlows": 0,
+      "Attack_Ratio": 0.0
+    },
+    {
+      "Destination Port": 465,
+      "TotalFlows": 3062,
+      "AttackFlows": 84,
+      "Attack_Ratio": 2.7
+    },
+    {
+      "Destination Port": 8080,
+      "TotalFlows": 2688,
+      "AttackFlows": 1356,
+      "Attack_Ratio": 50.4
+    },
+    {
+      "Destination Port": 139,
+      "TotalFlows": 2593,
+      "AttackFlows": 196,
+      "Attack_Ratio": 7.6
+    },
+    {
+      "Destination Port": 3268,
+      "TotalFlows": 2463,
+      "AttackFlows": 86,
+      "Attack_Ratio": 3.5
+    },
+    {
+      "Destination Port": 445,
+      "TotalFlows": 2090,
+      "AttackFlows": 179,
+      "Attack_Ratio": 8.6
+    },
+    {
+      "Destination Port": 0,
+      "TotalFlows": 1589,
+      "AttackFlows": 6,
+      "Attack_Ratio": 0.4
+    }
+  ],
+  "dos_flows": 193745,
+  "ddos_flows": 128014,
+  "flow_bytes_by_attack": [
+    {
+      "Attack_Category": "Benign",
+      "Avg_Bytes_per_s": 1692870.55,
+      "Avg_Packets_per_s": 53485.53,
+      "Avg_Duration_us": 11866709.0
+    },
+    {
+      "Attack_Category": "Bot",
+      "Avg_Bytes_per_s": 290128.74,
+      "Avg_Packets_per_s": 43995.05,
+      "Avg_Duration_us": 354185.44
+    },
+    {
+      "Attack_Category": "Port Scan",
+      "Avg_Bytes_per_s": 253704.24,
+      "Avg_Packets_per_s": 71995.39,
+      "Avg_Duration_us": 145096.46
+    },
+    {
+      "Attack_Category": "DoS",
+      "Avg_Bytes_per_s": 70554.57,
+      "Avg_Packets_per_s": 1619.0,
+      "Avg_Duration_us": 72634739.58
+    },
+    {
+      "Attack_Category": "Heartbleed",
+      "Avg_Bytes_per_s": 65902.8,
+      "Avg_Packets_per_s": 40.56,
+      "Avg_Duration_us": 110679707.55
+    },
+    {
+      "Attack_Category": "DDoS",
+      "Avg_Bytes_per_s": 60509.89,
+      "Avg_Packets_per_s": 155.39,
+      "Avg_Duration_us": 16957157.95
+    },
+    {
+      "Attack_Category": "Brute Force",
+      "Avg_Bytes_per_s": 25015.56,
+      "Avg_Packets_per_s": 5818.59,
+      "Avg_Duration_us": 7891160.13
+    },
+    {
+      "Attack_Category": "Infiltration",
+      "Avg_Bytes_per_s": 20188.22,
+      "Avg_Packets_per_s": 2820.06,
+      "Avg_Duration_us": 78407720.5
+    },
+    {
+      "Attack_Category": "Web Attack",
+      "Avg_Bytes_per_s": 160.64,
+      "Avg_Packets_per_s": 2406.29,
+      "Avg_Duration_us": 6646525.88
+    }
+  ],
+  "hourly_traffic": [
+    {
+      "Hour": 0,
+      "Attack_Category": "Benign",
+      "Flows": 89400
+    },
+    {
+      "Hour": 0,
+      "Attack_Category": "Bot",
+      "Flows": 88
+    },
+    {
+      "Hour": 0,
+      "Attack_Category": "Brute Force",
+      "Flows": 356
+    },
+    {
+      "Hour": 0,
+      "Attack_Category": "DDoS",
+      "Flows": 5355
+    },
+    {
+      "Hour": 0,
+      "Attack_Category": "DoS",
+      "Flows": 8166
+    },
+    {
+      "Hour": 0,
+      "Attack_Category": "Heartbleed",
+      "Flows": 1
+    },
+    {
+      "Hour": 0,
+      "Attack_Category": "Infiltration",
+      "Flows": 1
+    },
+    {
+      "Hour": 0,
+      "Attack_Category": "Port Scan",
+      "Flows": 3734
+    },
+    {
+      "Hour": 0,
+      "Attack_Category": "Web Attack",
+      "Flows": 78
+    },
+    {
+      "Hour": 1,
+      "Attack_Category": "Benign",
+      "Flows": 89261
+    },
+    {
+      "Hour": 1,
+      "Attack_Category": "Bot",
+      "Flows": 84
+    },
+    {
+      "Hour": 1,
+      "Attack_Category": "Brute Force",
+      "Flows": 358
+    },
+    {
+      "Hour": 1,
+      "Attack_Category": "DDoS",
+      "Flows": 5282
+    },
+    {
+      "Hour": 1,
+      "Attack_Category": "DoS",
+      "Flows": 7931
+    },
+    {
+      "Hour": 1,
+      "Attack_Category": "Infiltration",
+      "Flows": 2
+    },
+    {
+      "Hour": 1,
+      "Attack_Category": "Port Scan",
+      "Flows": 3739
+    },
+    {
+      "Hour": 1,
+      "Attack_Category": "Web Attack",
+      "Flows": 84
+    },
+    {
+      "Hour": 2,
+      "Attack_Category": "Benign",
+      "Flows": 89885
+    },
+    {
+      "Hour": 2,
+      "Attack_Category": "Bot",
+      "Flows": 73
+    },
+    {
+      "Hour": 2,
+      "Attack_Category": "Brute Force",
+      "Flows": 379
+    },
+    {
+      "Hour": 2,
+      "Attack_Category": "DDoS",
+      "Flows": 5317
+    },
+    {
+      "Hour": 2,
+      "Attack_Category": "DoS",
+      "Flows": 7980
+    },
+    {
+      "Hour": 2,
+      "Attack_Category": "Infiltration",
+      "Flows": 2
+    },
+    {
+      "Hour": 2,
+      "Attack_Category": "Port Scan",
+      "Flows": 3762
+    },
+    {
+      "Hour": 2,
+      "Attack_Category": "Web Attack",
+      "Flows": 88
+    },
+    {
+      "Hour": 3,
+      "Attack_Category": "Benign",
+      "Flows": 89260
+    },
+    {
+      "Hour": 3,
+      "Attack_Category": "Bot",
+      "Flows": 91
+    },
+    {
+      "Hour": 3,
+      "Attack_Category": "Brute Force",
+      "Flows": 383
+    },
+    {
+      "Hour": 3,
+      "Attack_Category": "DDoS",
+      "Flows": 5309
+    },
+    {
+      "Hour": 3,
+      "Attack_Category": "DoS",
+      "Flows": 7989
+    },
+    {
+      "Hour": 3,
+      "Attack_Category": "Port Scan",
+      "Flows": 3844
+    },
+    {
+      "Hour": 3,
+      "Attack_Category": "Web Attack",
+      "Flows": 75
+    },
+    {
+      "Hour": 4,
+      "Attack_Category": "Benign",
+      "Flows": 89414
+    },
+    {
+      "Hour": 4,
+      "Attack_Category": "Bot",
+      "Flows": 71
+    },
+    {
+      "Hour": 4,
+      "Attack_Category": "Brute Force",
+      "Flows": 400
+    },
+    {
+      "Hour": 4,
+      "Attack_Category": "DDoS",
+      "Flows": 5374
+    },
+    {
+      "Hour": 4,
+      "Attack_Category": "DoS",
+      "Flows": 8159
+    },
+    {
+      "Hour": 4,
+      "Attack_Category": "Infiltration",
+      "Flows": 3
+    },
+    {
+      "Hour": 4,
+      "Attack_Category": "Port Scan",
+      "Flows": 3781
+    },
+    {
+      "Hour": 4,
+      "Attack_Category": "Web Attack",
+      "Flows": 94
+    },
+    {
+      "Hour": 5,
+      "Attack_Category": "Benign",
+      "Flows": 89560
+    },
+    {
+      "Hour": 5,
+      "Attack_Category": "Bot",
+      "Flows": 82
+    },
+    {
+      "Hour": 5,
+      "Attack_Category": "Brute Force",
+      "Flows": 413
+    },
+    {
+      "Hour": 5,
+      "Attack_Category": "DDoS",
+      "Flows": 5344
+    },
+    {
+      "Hour": 5,
+      "Attack_Category": "DoS",
+      "Flows": 7874
+    },
+    {
+      "Hour": 5,
+      "Attack_Category": "Infiltration",
+      "Flows": 1
+    },
+    {
+      "Hour": 5,
+      "Attack_Category": "Port Scan",
+      "Flows": 3777
+    },
+    {
+      "Hour": 5,
+      "Attack_Category": "Web Attack",
+      "Flows": 76
+    },
+    {
+      "Hour": 6,
+      "Attack_Category": "Benign",
+      "Flows": 89841
+    },
+    {
+      "Hour": 6,
+      "Attack_Category": "Bot",
+      "Flows": 100
+    },
+    {
+      "Hour": 6,
+      "Attack_Category": "Brute Force",
+      "Flows": 368
+    },
+    {
+      "Hour": 6,
+      "Attack_Category": "DDoS",
+      "Flows": 5337
+    },
+    {
+      "Hour": 6,
+      "Attack_Category": "DoS",
+      "Flows": 8050
+    },
+    {
+      "Hour": 6,
+      "Attack_Category": "Infiltration",
+      "Flows": 2
+    },
+    {
+      "Hour": 6,
+      "Attack_Category": "Port Scan",
+      "Flows": 3736
+    },
+    {
+      "Hour": 6,
+      "Attack_Category": "Web Attack",
+      "Flows": 75
+    },
+    {
+      "Hour": 7,
+      "Attack_Category": "Benign",
+      "Flows": 89733
+    },
+    {
+      "Hour": 7,
+      "Attack_Category": "Bot",
+      "Flows": 89
+    },
+    {
+      "Hour": 7,
+      "Attack_Category": "Brute Force",
+      "Flows": 393
+    },
+    {
+      "Hour": 7,
+      "Attack_Category": "DDoS",
+      "Flows": 5319
+    },
+    {
+      "Hour": 7,
+      "Attack_Category": "DoS",
+      "Flows": 8117
+    },
+    {
+      "Hour": 7,
+      "Attack_Category": "Port Scan",
+      "Flows": 3796
+    },
+    {
+      "Hour": 7,
+      "Attack_Category": "Web Attack",
+      "Flows": 93
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "Benign",
+      "Flows": 88959
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "Bot",
+      "Flows": 63
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "Brute Force",
+      "Flows": 371
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "DDoS",
+      "Flows": 5316
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "DoS",
+      "Flows": 8109
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "Heartbleed",
+      "Flows": 1
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "Infiltration",
+      "Flows": 1
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "Port Scan",
+      "Flows": 3709
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "Web Attack",
+      "Flows": 83
+    },
+    {
+      "Hour": 9,
+      "Attack_Category": "Benign",
+      "Flows": 89645
+    },
+    {
+      "Hour": 9,
+      "Attack_Category": "Bot",
+      "Flows": 82
+    },
+    {
+      "Hour": 9,
+      "Attack_Category": "Brute Force",
+      "Flows": 353
+    },
+    {
+      "Hour": 9,
+      "Attack_Category": "DDoS",
+      "Flows": 5392
+    },
+    {
+      "Hour": 9,
+      "Attack_Category": "DoS",
+      "Flows": 8018
+    },
+    {
+      "Hour": 9,
+      "Attack_Category": "Infiltration",
+      "Flows": 1
+    },
+    {
+      "Hour": 9,
+      "Attack_Category": "Port Scan",
+      "Flows": 3672
+    },
+    {
+      "Hour": 9,
+      "Attack_Category": "Web Attack",
+      "Flows": 87
+    },
+    {
+      "Hour": 10,
+      "Attack_Category": "Benign",
+      "Flows": 89434
+    },
+    {
+      "Hour": 10,
+      "Attack_Category": "Bot",
+      "Flows": 91
+    },
+    {
+      "Hour": 10,
+      "Attack_Category": "Brute Force",
+      "Flows": 372
+    },
+    {
+      "Hour": 10,
+      "Attack_Category": "DDoS",
+      "Flows": 5304
+    },
+    {
+      "Hour": 10,
+      "Attack_Category": "DoS",
+      "Flows": 8122
+    },
+    {
+      "Hour": 10,
+      "Attack_Category": "Infiltration",
+      "Flows": 1
+    },
+    {
+      "Hour": 10,
+      "Attack_Category": "Port Scan",
+      "Flows": 3814
+    },
+    {
+      "Hour": 10,
+      "Attack_Category": "Web Attack",
+      "Flows": 104
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "Benign",
+      "Flows": 89624
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "Bot",
+      "Flows": 91
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "Brute Force",
+      "Flows": 368
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "DDoS",
+      "Flows": 5331
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "DoS",
+      "Flows": 7922
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "Heartbleed",
+      "Flows": 1
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "Infiltration",
+      "Flows": 2
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "Port Scan",
+      "Flows": 3881
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "Web Attack",
+      "Flows": 85
+    },
+    {
+      "Hour": 12,
+      "Attack_Category": "Benign",
+      "Flows": 89639
+    },
+    {
+      "Hour": 12,
+      "Attack_Category": "Bot",
+      "Flows": 85
+    },
+    {
+      "Hour": 12,
+      "Attack_Category": "Brute Force",
+      "Flows": 366
+    },
+    {
+      "Hour": 12,
+      "Attack_Category": "DDoS",
+      "Flows": 5325
+    },
+    {
+      "Hour": 12,
+      "Attack_Category": "DoS",
+      "Flows": 7958
+    },
+    {
+      "Hour": 12,
+      "Attack_Category": "Heartbleed",
+      "Flows": 1
+    },
+    {
+      "Hour": 12,
+      "Attack_Category": "Port Scan",
+      "Flows": 3754
+    },
+    {
+      "Hour": 12,
+      "Attack_Category": "Web Attack",
+      "Flows": 98
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "Benign",
+      "Flows": 89446
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "Bot",
+      "Flows": 79
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "Brute Force",
+      "Flows": 381
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "DDoS",
+      "Flows": 5275
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "DoS",
+      "Flows": 8152
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "Heartbleed",
+      "Flows": 1
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "Infiltration",
+      "Flows": 1
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "Port Scan",
+      "Flows": 3827
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "Web Attack",
+      "Flows": 93
+    },
+    {
+      "Hour": 14,
+      "Attack_Category": "Benign",
+      "Flows": 89662
+    },
+    {
+      "Hour": 14,
+      "Attack_Category": "Bot",
+      "Flows": 69
+    },
+    {
+      "Hour": 14,
+      "Attack_Category": "Brute Force",
+      "Flows": 375
+    },
+    {
+      "Hour": 14,
+      "Attack_Category": "DDoS",
+      "Flows": 5319
+    },
+    {
+      "Hour": 14,
+      "Attack_Category": "DoS",
+      "Flows": 8079
+    },
+    {
+      "Hour": 14,
+      "Attack_Category": "Infiltration",
+      "Flows": 3
+    },
+    {
+      "Hour": 14,
+      "Attack_Category": "Port Scan",
+      "Flows": 3818
+    },
+    {
+      "Hour": 14,
+      "Attack_Category": "Web Attack",
+      "Flows": 93
+    },
+    {
+      "Hour": 15,
+      "Attack_Category": "Benign",
+      "Flows": 89374
+    },
+    {
+      "Hour": 15,
+      "Attack_Category": "Bot",
+      "Flows": 83
+    },
+    {
+      "Hour": 15,
+      "Attack_Category": "Brute Force",
+      "Flows": 367
+    },
+    {
+      "Hour": 15,
+      "Attack_Category": "DDoS",
+      "Flows": 5424
+    },
+    {
+      "Hour": 15,
+      "Attack_Category": "DoS",
+      "Flows": 8088
+    },
+    {
+      "Hour": 15,
+      "Attack_Category": "Infiltration",
+      "Flows": 1
+    },
+    {
+      "Hour": 15,
+      "Attack_Category": "Port Scan",
+      "Flows": 3794
+    },
+    {
+      "Hour": 15,
+      "Attack_Category": "Web Attack",
+      "Flows": 96
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "Benign",
+      "Flows": 89464
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "Bot",
+      "Flows": 73
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "Brute Force",
+      "Flows": 379
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "DDoS",
+      "Flows": 5389
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "DoS",
+      "Flows": 8027
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "Heartbleed",
+      "Flows": 1
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "Infiltration",
+      "Flows": 4
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "Port Scan",
+      "Flows": 3766
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "Web Attack",
+      "Flows": 84
+    },
+    {
+      "Hour": 17,
+      "Attack_Category": "Benign",
+      "Flows": 89186
+    },
+    {
+      "Hour": 17,
+      "Attack_Category": "Bot",
+      "Flows": 84
+    },
+    {
+      "Hour": 17,
+      "Attack_Category": "Brute Force",
+      "Flows": 430
+    },
+    {
+      "Hour": 17,
+      "Attack_Category": "DDoS",
+      "Flows": 5234
+    },
+    {
+      "Hour": 17,
+      "Attack_Category": "DoS",
+      "Flows": 8275
+    },
+    {
+      "Hour": 17,
+      "Attack_Category": "Infiltration",
+      "Flows": 3
+    },
+    {
+      "Hour": 17,
+      "Attack_Category": "Port Scan",
+      "Flows": 3724
+    },
+    {
+      "Hour": 17,
+      "Attack_Category": "Web Attack",
+      "Flows": 91
+    },
+    {
+      "Hour": 18,
+      "Attack_Category": "Benign",
+      "Flows": 89168
+    },
+    {
+      "Hour": 18,
+      "Attack_Category": "Bot",
+      "Flows": 84
+    },
+    {
+      "Hour": 18,
+      "Attack_Category": "Brute Force",
+      "Flows": 378
+    },
+    {
+      "Hour": 18,
+      "Attack_Category": "DDoS",
+      "Flows": 5283
+    },
+    {
+      "Hour": 18,
+      "Attack_Category": "DoS",
+      "Flows": 8027
+    },
+    {
+      "Hour": 18,
+      "Attack_Category": "Infiltration",
+      "Flows": 2
+    },
+    {
+      "Hour": 18,
+      "Attack_Category": "Port Scan",
+      "Flows": 3838
+    },
+    {
+      "Hour": 18,
+      "Attack_Category": "Web Attack",
+      "Flows": 106
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "Benign",
+      "Flows": 89399
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "Bot",
+      "Flows": 65
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "Brute Force",
+      "Flows": 432
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "DDoS",
+      "Flows": 5429
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "DoS",
+      "Flows": 8101
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "Heartbleed",
+      "Flows": 2
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "Infiltration",
+      "Flows": 1
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "Port Scan",
+      "Flows": 3803
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "Web Attack",
+      "Flows": 79
+    },
+    {
+      "Hour": 20,
+      "Attack_Category": "Benign",
+      "Flows": 88928
+    },
+    {
+      "Hour": 20,
+      "Attack_Category": "Bot",
+      "Flows": 72
+    },
+    {
+      "Hour": 20,
+      "Attack_Category": "Brute Force",
+      "Flows": 394
+    },
+    {
+      "Hour": 20,
+      "Attack_Category": "DDoS",
+      "Flows": 5343
+    },
+    {
+      "Hour": 20,
+      "Attack_Category": "DoS",
+      "Flows": 8104
+    },
+    {
+      "Hour": 20,
+      "Attack_Category": "Infiltration",
+      "Flows": 2
+    },
+    {
+      "Hour": 20,
+      "Attack_Category": "Port Scan",
+      "Flows": 3822
+    },
+    {
+      "Hour": 20,
+      "Attack_Category": "Web Attack",
+      "Flows": 90
+    },
+    {
+      "Hour": 21,
+      "Attack_Category": "Benign",
+      "Flows": 89645
+    },
+    {
+      "Hour": 21,
+      "Attack_Category": "Bot",
+      "Flows": 64
+    },
+    {
+      "Hour": 21,
+      "Attack_Category": "Brute Force",
+      "Flows": 367
+    },
+    {
+      "Hour": 21,
+      "Attack_Category": "DDoS",
+      "Flows": 5255
+    },
+    {
+      "Hour": 21,
+      "Attack_Category": "DoS",
+      "Flows": 8120
+    },
+    {
+      "Hour": 21,
+      "Attack_Category": "Port Scan",
+      "Flows": 3776
+    },
+    {
+      "Hour": 21,
+      "Attack_Category": "Web Attack",
+      "Flows": 79
+    },
+    {
+      "Hour": 22,
+      "Attack_Category": "Benign",
+      "Flows": 89361
+    },
+    {
+      "Hour": 22,
+      "Attack_Category": "Bot",
+      "Flows": 93
+    },
+    {
+      "Hour": 22,
+      "Attack_Category": "Brute Force",
+      "Flows": 362
+    },
+    {
+      "Hour": 22,
+      "Attack_Category": "DDoS",
+      "Flows": 5432
+    },
+    {
+      "Hour": 22,
+      "Attack_Category": "DoS",
+      "Flows": 8215
+    },
+    {
+      "Hour": 22,
+      "Attack_Category": "Heartbleed",
+      "Flows": 3
+    },
+    {
+      "Hour": 22,
+      "Attack_Category": "Port Scan",
+      "Flows": 3657
+    },
+    {
+      "Hour": 22,
+      "Attack_Category": "Web Attack",
+      "Flows": 92
+    },
+    {
+      "Hour": 23,
+      "Attack_Category": "Benign",
+      "Flows": 89611
+    },
+    {
+      "Hour": 23,
+      "Attack_Category": "Bot",
+      "Flows": 92
+    },
+    {
+      "Hour": 23,
+      "Attack_Category": "Brute Force",
+      "Flows": 405
+    },
+    {
+      "Hour": 23,
+      "Attack_Category": "DDoS",
+      "Flows": 5326
+    },
+    {
+      "Hour": 23,
+      "Attack_Category": "DoS",
+      "Flows": 8162
+    },
+    {
+      "Hour": 23,
+      "Attack_Category": "Infiltration",
+      "Flows": 3
+    },
+    {
+      "Hour": 23,
+      "Attack_Category": "Port Scan",
+      "Flows": 3870
+    },
+    {
+      "Hour": 23,
+      "Attack_Category": "Web Attack",
+      "Flows": 120
+    }
+  ]
+}

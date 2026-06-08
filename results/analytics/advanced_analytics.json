@@ -1,0 +1,2835 @@
+{
+  "sql_attack_profile": [
+    {
+      "Attack_Category": "Benign",
+      "total_flows": 2146899,
+      "unique_src_ips": 12397,
+      "unique_dst_ports": 53788,
+      "avg_bytes_per_sec": 1692870.55,
+      "avg_duration_us": 11866709.0,
+      "avg_syn_flags": 0.056,
+      "max_bytes_per_sec": 2071000000.0
+    },
+    {
+      "Attack_Category": "DoS",
+      "total_flows": 193745,
+      "unique_src_ips": 95,
+      "unique_dst_ports": 1,
+      "avg_bytes_per_sec": 70554.57,
+      "avg_duration_us": 72634739.58,
+      "avg_syn_flags": 0.011,
+      "max_bytes_per_sec": 1980000000.0
+    },
+    {
+      "Attack_Category": "DDoS",
+      "total_flows": 128014,
+      "unique_src_ips": 49,
+      "unique_dst_ports": 4,
+      "avg_bytes_per_sec": 60509.89,
+      "avg_duration_us": 16957157.95,
+      "avg_syn_flags": 0.0,
+      "max_bytes_per_sec": 347000000.0
+    },
+    {
+      "Attack_Category": "Port Scan",
+      "total_flows": 90694,
+      "unique_src_ips": 9,
+      "unique_dst_ports": 1000,
+      "avg_bytes_per_sec": 253704.24,
+      "avg_duration_us": 145096.46,
+      "avg_syn_flags": 0.0,
+      "max_bytes_per_sec": 8000000.0
+    },
+    {
+      "Attack_Category": "Brute Force",
+      "total_flows": 9150,
+      "unique_src_ips": 7,
+      "unique_dst_ports": 3,
+      "avg_bytes_per_sec": 25015.56,
+      "avg_duration_us": 7891160.13,
+      "avg_syn_flags": 0.214,
+      "max_bytes_per_sec": 14000000.0
+    },
+    {
+      "Attack_Category": "Web Attack",
+      "total_flows": 2143,
+      "unique_src_ips": 29,
+      "unique_dst_ports": 1,
+      "avg_bytes_per_sec": 160.64,
+      "avg_duration_us": 6646525.88,
+      "avg_syn_flags": 0.0,
+      "max_bytes_per_sec": 7589.09
+    },
+    {
+      "Attack_Category": "Bot",
+      "total_flows": 1948,
+      "unique_src_ips": 29,
+      "unique_dst_ports": 702,
+      "avg_bytes_per_sec": 290128.74,
+      "avg_duration_us": 354185.44,
+      "avg_syn_flags": 0.0,
+      "max_bytes_per_sec": 12000000.0
+    },
+    {
+      "Attack_Category": "Infiltration",
+      "total_flows": 36,
+      "unique_src_ips": 9,
+      "unique_dst_ports": 1,
+      "avg_bytes_per_sec": 20188.22,
+      "avg_duration_us": 78407720.5,
+      "avg_syn_flags": 0.556,
+      "max_bytes_per_sec": 600000.0
+    },
+    {
+      "Attack_Category": "Heartbleed",
+      "total_flows": 11,
+      "unique_src_ips": 4,
+      "unique_dst_ports": 1,
+      "avg_bytes_per_sec": 65902.8,
+      "avg_duration_us": 110679707.55,
+      "avg_syn_flags": 0.0,
+      "max_bytes_per_sec": 66510.81
+    }
+  ],
+  "top_ips_per_attack_windowed": [
+    {
+      "Source IP": "10.10.0.4",
+      "Attack_Category": "Bot",
+      "flow_count": 82,
+      "rank": 1,
+      "dense_rank": 1,
+      "pct_of_category": 4.21
+    },
+    {
+      "Source IP": "10.10.0.26",
+      "Attack_Category": "Bot",
+      "flow_count": 80,
+      "rank": 2,
+      "dense_rank": 2,
+      "pct_of_category": 4.11
+    },
+    {
+      "Source IP": "10.10.0.13",
+      "Attack_Category": "Bot",
+      "flow_count": 79,
+      "rank": 3,
+      "dense_rank": 3,
+      "pct_of_category": 4.06
+    },
+    {
+      "Source IP": "10.10.0.28",
+      "Attack_Category": "Bot",
+      "flow_count": 78,
+      "rank": 4,
+      "dense_rank": 4,
+      "pct_of_category": 4.0
+    },
+    {
+      "Source IP": "10.10.0.16",
+      "Attack_Category": "Bot",
+      "flow_count": 76,
+      "rank": 5,
+      "dense_rank": 5,
+      "pct_of_category": 3.9
+    },
+    {
+      "Source IP": "10.10.0.14",
+      "Attack_Category": "Bot",
+      "flow_count": 76,
+      "rank": 5,
+      "dense_rank": 5,
+      "pct_of_category": 3.9
+    },
+    {
+      "Source IP": "192.168.10.3",
+      "Attack_Category": "Brute Force",
+      "flow_count": 1378,
+      "rank": 1,
+      "dense_rank": 1,
+      "pct_of_category": 15.06
+    },
+    {
+      "Source IP": "192.168.10.7",
+      "Attack_Category": "Brute Force",
+      "flow_count": 1351,
+      "rank": 2,
+      "dense_rank": 2,
+      "pct_of_category": 14.77
+    },
+    {
+      "Source IP": "192.168.10.6",
+      "Attack_Category": "Brute Force",
+      "flow_count": 1327,
+      "rank": 3,
+      "dense_rank": 3,
+      "pct_of_category": 14.5
+    },
+    {
+      "Source IP": "192.168.10.5",
+      "Attack_Category": "Brute Force",
+      "flow_count": 1307,
+      "rank": 4,
+      "dense_rank": 4,
+      "pct_of_category": 14.28
+    },
+    {
+      "Source IP": "192.168.10.2",
+      "Attack_Category": "Brute Force",
+      "flow_count": 1279,
+      "rank": 5,
+      "dense_rank": 5,
+      "pct_of_category": 13.98
+    },
+    {
+      "Source IP": "203.0.113.28",
+      "Attack_Category": "DDoS",
+      "flow_count": 2721,
+      "rank": 1,
+      "dense_rank": 1,
+      "pct_of_category": 2.13
+    },
+    {
+      "Source IP": "203.0.113.4",
+      "Attack_Category": "DDoS",
+      "flow_count": 2719,
+      "rank": 2,
+      "dense_rank": 2,
+      "pct_of_category": 2.12
+    },
+    {
+      "Source IP": "203.0.113.23",
+      "Attack_Category": "DDoS",
+      "flow_count": 2691,
+      "rank": 3,
+      "dense_rank": 3,
+      "pct_of_category": 2.1
+    },
+    {
+      "Source IP": "203.0.113.18",
+      "Attack_Category": "DDoS",
+      "flow_count": 2690,
+      "rank": 4,
+      "dense_rank": 4,
+      "pct_of_category": 2.1
+    },
+    {
+      "Source IP": "203.0.113.35",
+      "Attack_Category": "DDoS",
+      "flow_count": 2689,
+      "rank": 5,
+      "dense_rank": 5,
+      "pct_of_category": 2.1
+    },
+    {
+      "Source IP": "203.0.113.31",
+      "Attack_Category": "DDoS",
+      "flow_count": 2689,
+      "rank": 5,
+      "dense_rank": 5,
+      "pct_of_category": 2.1
+    },
+    {
+      "Source IP": "172.16.2.13",
+      "Attack_Category": "DoS",
+      "flow_count": 2141,
+      "rank": 1,
+      "dense_rank": 1,
+      "pct_of_category": 1.11
+    },
+    {
+      "Source IP": "172.16.0.8",
+      "Attack_Category": "DoS",
+      "flow_count": 2118,
+      "rank": 2,
+      "dense_rank": 2,
+      "pct_of_category": 1.09
+    },
+    {
+      "Source IP": "172.16.1.3",
+      "Attack_Category": "DoS",
+      "flow_count": 2117,
+      "rank": 3,
+      "dense_rank": 3,
+      "pct_of_category": 1.09
+    },
+    {
+      "Source IP": "172.16.2.10",
+      "Attack_Category": "DoS",
+      "flow_count": 2115,
+      "rank": 4,
+      "dense_rank": 4,
+      "pct_of_category": 1.09
+    },
+    {
+      "Source IP": "172.16.3.18",
+      "Attack_Category": "DoS",
+      "flow_count": 2104,
+      "rank": 5,
+      "dense_rank": 5,
+      "pct_of_category": 1.09
+    },
+    {
+      "Source IP": "172.16.200.1",
+      "Attack_Category": "Heartbleed",
+      "flow_count": 6,
+      "rank": 1,
+      "dense_rank": 1,
+      "pct_of_category": 54.55
+    },
+    {
+      "Source IP": "172.16.200.4",
+      "Attack_Category": "Heartbleed",
+      "flow_count": 2,
+      "rank": 2,
+      "dense_rank": 2,
+      "pct_of_category": 18.18
+    },
+    {
+      "Source IP": "172.16.200.3",
+      "Attack_Category": "Heartbleed",
+      "flow_count": 2,
+      "rank": 2,
+      "dense_rank": 2,
+      "pct_of_category": 18.18
+    },
+    {
+      "Source IP": "172.16.200.2",
+      "Attack_Category": "Heartbleed",
+      "flow_count": 1,
+      "rank": 4,
+      "dense_rank": 3,
+      "pct_of_category": 9.09
+    },
+    {
+      "Source IP": "198.51.100.1",
+      "Attack_Category": "Infiltration",
+      "flow_count": 6,
+      "rank": 1,
+      "dense_rank": 1,
+      "pct_of_category": 16.67
+    },
+    {
+      "Source IP": "198.51.100.5",
+      "Attack_Category": "Infiltration",
+      "flow_count": 6,
+      "rank": 1,
+      "dense_rank": 1,
+      "pct_of_category": 16.67
+    },
+    {
+      "Source IP": "198.51.100.7",
+      "Attack_Category": "Infiltration",
+      "flow_count": 5,
+      "rank": 3,
+      "dense_rank": 2,
+      "pct_of_category": 13.89
+    },
+    {
+      "Source IP": "198.51.100.9",
+      "Attack_Category": "Infiltration",
+      "flow_count": 5,
+      "rank": 3,
+      "dense_rank": 2,
+      "pct_of_category": 13.89
+    },
+    {
+      "Source IP": "198.51.100.4",
+      "Attack_Category": "Infiltration",
+      "flow_count": 4,
+      "rank": 5,
+      "dense_rank": 3,
+      "pct_of_category": 11.11
+    },
+    {
+      "Source IP": "198.51.100.6",
+      "Attack_Category": "Infiltration",
+      "flow_count": 4,
+      "rank": 5,
+      "dense_rank": 3,
+      "pct_of_category": 11.11
+    },
+    {
+      "Source IP": "192.168.100.4",
+      "Attack_Category": "Port Scan",
+      "flow_count": 10205,
+      "rank": 1,
+      "dense_rank": 1,
+      "pct_of_category": 11.25
+    },
+    {
+      "Source IP": "192.168.100.8",
+      "Attack_Category": "Port Scan",
+      "flow_count": 10138,
+      "rank": 2,
+      "dense_rank": 2,
+      "pct_of_category": 11.18
+    },
+    {
+      "Source IP": "192.168.100.5",
+      "Attack_Category": "Port Scan",
+      "flow_count": 10115,
+      "rank": 3,
+      "dense_rank": 3,
+      "pct_of_category": 11.15
+    },
+    {
+      "Source IP": "192.168.100.1",
+      "Attack_Category": "Port Scan",
+      "flow_count": 10098,
+      "rank": 4,
+      "dense_rank": 4,
+      "pct_of_category": 11.13
+    },
+    {
+      "Source IP": "192.168.100.2",
+      "Attack_Category": "Port Scan",
+      "flow_count": 10093,
+      "rank": 5,
+      "dense_rank": 5,
+      "pct_of_category": 11.13
+    },
+    {
+      "Source IP": "203.0.113.66",
+      "Attack_Category": "Web Attack",
+      "flow_count": 92,
+      "rank": 1,
+      "dense_rank": 1,
+      "pct_of_category": 4.29
+    },
+    {
+      "Source IP": "203.0.113.53",
+      "Attack_Category": "Web Attack",
+      "flow_count": 88,
+      "rank": 2,
+      "dense_rank": 2,
+      "pct_of_category": 4.11
+    },
+    {
+      "Source IP": "203.0.113.64",
+      "Attack_Category": "Web Attack",
+      "flow_count": 85,
+      "rank": 3,
+      "dense_rank": 3,
+      "pct_of_category": 3.97
+    },
+    {
+      "Source IP": "203.0.113.63",
+      "Attack_Category": "Web Attack",
+      "flow_count": 82,
+      "rank": 4,
+      "dense_rank": 4,
+      "pct_of_category": 3.83
+    },
+    {
+      "Source IP": "203.0.113.51",
+      "Attack_Category": "Web Attack",
+      "flow_count": 82,
+      "rank": 4,
+      "dense_rank": 4,
+      "pct_of_category": 3.83
+    }
+  ],
+  "hourly_attack_delta": [
+    {
+      "Hour": 0,
+      "Attack_Category": "Bot",
+      "flows": 88,
+      "prev_hour_flows": null,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 1,
+      "Attack_Category": "Bot",
+      "flows": 84,
+      "prev_hour_flows": 88,
+      "delta": -4,
+      "pct_change": -4.5
+    },
+    {
+      "Hour": 2,
+      "Attack_Category": "Bot",
+      "flows": 73,
+      "prev_hour_flows": 84,
+      "delta": -11,
+      "pct_change": -13.1
+    },
+    {
+      "Hour": 3,
+      "Attack_Category": "Bot",
+      "flows": 91,
+      "prev_hour_flows": 73,
+      "delta": 18,
+      "pct_change": 24.7
+    },
+    {
+      "Hour": 4,
+      "Attack_Category": "Bot",
+      "flows": 71,
+      "prev_hour_flows": 91,
+      "delta": -20,
+      "pct_change": -22.0
+    },
+    {
+      "Hour": 5,
+      "Attack_Category": "Bot",
+      "flows": 82,
+      "prev_hour_flows": 71,
+      "delta": 11,
+      "pct_change": 15.5
+    },
+    {
+      "Hour": 6,
+      "Attack_Category": "Bot",
+      "flows": 100,
+      "prev_hour_flows": 82,
+      "delta": 18,
+      "pct_change": 22.0
+    },
+    {
+      "Hour": 7,
+      "Attack_Category": "Bot",
+      "flows": 89,
+      "prev_hour_flows": 100,
+      "delta": -11,
+      "pct_change": -11.0
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "Bot",
+      "flows": 63,
+      "prev_hour_flows": 89,
+      "delta": -26,
+      "pct_change": -29.2
+    },
+    {
+      "Hour": 9,
+      "Attack_Category": "Bot",
+      "flows": 82,
+      "prev_hour_flows": 63,
+      "delta": 19,
+      "pct_change": 30.2
+    },
+    {
+      "Hour": 10,
+      "Attack_Category": "Bot",
+      "flows": 91,
+      "prev_hour_flows": 82,
+      "delta": 9,
+      "pct_change": 11.0
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "Bot",
+      "flows": 91,
+      "prev_hour_flows": 91,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 12,
+      "Attack_Category": "Bot",
+      "flows": 85,
+      "prev_hour_flows": 91,
+      "delta": -6,
+      "pct_change": -6.6
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "Bot",
+      "flows": 79,
+      "prev_hour_flows": 85,
+      "delta": -6,
+      "pct_change": -7.1
+    },
+    {
+      "Hour": 14,
+      "Attack_Category": "Bot",
+      "flows": 69,
+      "prev_hour_flows": 79,
+      "delta": -10,
+      "pct_change": -12.7
+    },
+    {
+      "Hour": 15,
+      "Attack_Category": "Bot",
+      "flows": 83,
+      "prev_hour_flows": 69,
+      "delta": 14,
+      "pct_change": 20.3
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "Bot",
+      "flows": 73,
+      "prev_hour_flows": 83,
+      "delta": -10,
+      "pct_change": -12.0
+    },
+    {
+      "Hour": 17,
+      "Attack_Category": "Bot",
+      "flows": 84,
+      "prev_hour_flows": 73,
+      "delta": 11,
+      "pct_change": 15.1
+    },
+    {
+      "Hour": 18,
+      "Attack_Category": "Bot",
+      "flows": 84,
+      "prev_hour_flows": 84,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "Bot",
+      "flows": 65,
+      "prev_hour_flows": 84,
+      "delta": -19,
+      "pct_change": -22.6
+    },
+    {
+      "Hour": 20,
+      "Attack_Category": "Bot",
+      "flows": 72,
+      "prev_hour_flows": 65,
+      "delta": 7,
+      "pct_change": 10.8
+    },
+    {
+      "Hour": 21,
+      "Attack_Category": "Bot",
+      "flows": 64,
+      "prev_hour_flows": 72,
+      "delta": -8,
+      "pct_change": -11.1
+    },
+    {
+      "Hour": 22,
+      "Attack_Category": "Bot",
+      "flows": 93,
+      "prev_hour_flows": 64,
+      "delta": 29,
+      "pct_change": 45.3
+    },
+    {
+      "Hour": 23,
+      "Attack_Category": "Bot",
+      "flows": 92,
+      "prev_hour_flows": 93,
+      "delta": -1,
+      "pct_change": -1.1
+    },
+    {
+      "Hour": 0,
+      "Attack_Category": "Brute Force",
+      "flows": 356,
+      "prev_hour_flows": null,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 1,
+      "Attack_Category": "Brute Force",
+      "flows": 358,
+      "prev_hour_flows": 356,
+      "delta": 2,
+      "pct_change": 0.6
+    },
+    {
+      "Hour": 2,
+      "Attack_Category": "Brute Force",
+      "flows": 379,
+      "prev_hour_flows": 358,
+      "delta": 21,
+      "pct_change": 5.9
+    },
+    {
+      "Hour": 3,
+      "Attack_Category": "Brute Force",
+      "flows": 383,
+      "prev_hour_flows": 379,
+      "delta": 4,
+      "pct_change": 1.1
+    },
+    {
+      "Hour": 4,
+      "Attack_Category": "Brute Force",
+      "flows": 400,
+      "prev_hour_flows": 383,
+      "delta": 17,
+      "pct_change": 4.4
+    },
+    {
+      "Hour": 5,
+      "Attack_Category": "Brute Force",
+      "flows": 413,
+      "prev_hour_flows": 400,
+      "delta": 13,
+      "pct_change": 3.3
+    },
+    {
+      "Hour": 6,
+      "Attack_Category": "Brute Force",
+      "flows": 368,
+      "prev_hour_flows": 413,
+      "delta": -45,
+      "pct_change": -10.9
+    },
+    {
+      "Hour": 7,
+      "Attack_Category": "Brute Force",
+      "flows": 393,
+      "prev_hour_flows": 368,
+      "delta": 25,
+      "pct_change": 6.8
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "Brute Force",
+      "flows": 371,
+      "prev_hour_flows": 393,
+      "delta": -22,
+      "pct_change": -5.6
+    },
+    {
+      "Hour": 9,
+      "Attack_Category": "Brute Force",
+      "flows": 353,
+      "prev_hour_flows": 371,
+      "delta": -18,
+      "pct_change": -4.9
+    },
+    {
+      "Hour": 10,
+      "Attack_Category": "Brute Force",
+      "flows": 372,
+      "prev_hour_flows": 353,
+      "delta": 19,
+      "pct_change": 5.4
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "Brute Force",
+      "flows": 368,
+      "prev_hour_flows": 372,
+      "delta": -4,
+      "pct_change": -1.1
+    },
+    {
+      "Hour": 12,
+      "Attack_Category": "Brute Force",
+      "flows": 366,
+      "prev_hour_flows": 368,
+      "delta": -2,
+      "pct_change": -0.5
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "Brute Force",
+      "flows": 381,
+      "prev_hour_flows": 366,
+      "delta": 15,
+      "pct_change": 4.1
+    },
+    {
+      "Hour": 14,
+      "Attack_Category": "Brute Force",
+      "flows": 375,
+      "prev_hour_flows": 381,
+      "delta": -6,
+      "pct_change": -1.6
+    },
+    {
+      "Hour": 15,
+      "Attack_Category": "Brute Force",
+      "flows": 367,
+      "prev_hour_flows": 375,
+      "delta": -8,
+      "pct_change": -2.1
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "Brute Force",
+      "flows": 379,
+      "prev_hour_flows": 367,
+      "delta": 12,
+      "pct_change": 3.3
+    },
+    {
+      "Hour": 17,
+      "Attack_Category": "Brute Force",
+      "flows": 430,
+      "prev_hour_flows": 379,
+      "delta": 51,
+      "pct_change": 13.5
+    },
+    {
+      "Hour": 18,
+      "Attack_Category": "Brute Force",
+      "flows": 378,
+      "prev_hour_flows": 430,
+      "delta": -52,
+      "pct_change": -12.1
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "Brute Force",
+      "flows": 432,
+      "prev_hour_flows": 378,
+      "delta": 54,
+      "pct_change": 14.3
+    },
+    {
+      "Hour": 20,
+      "Attack_Category": "Brute Force",
+      "flows": 394,
+      "prev_hour_flows": 432,
+      "delta": -38,
+      "pct_change": -8.8
+    },
+    {
+      "Hour": 21,
+      "Attack_Category": "Brute Force",
+      "flows": 367,
+      "prev_hour_flows": 394,
+      "delta": -27,
+      "pct_change": -6.9
+    },
+    {
+      "Hour": 22,
+      "Attack_Category": "Brute Force",
+      "flows": 362,
+      "prev_hour_flows": 367,
+      "delta": -5,
+      "pct_change": -1.4
+    },
+    {
+      "Hour": 23,
+      "Attack_Category": "Brute Force",
+      "flows": 405,
+      "prev_hour_flows": 362,
+      "delta": 43,
+      "pct_change": 11.9
+    },
+    {
+      "Hour": 0,
+      "Attack_Category": "DDoS",
+      "flows": 5355,
+      "prev_hour_flows": null,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 1,
+      "Attack_Category": "DDoS",
+      "flows": 5282,
+      "prev_hour_flows": 5355,
+      "delta": -73,
+      "pct_change": -1.4
+    },
+    {
+      "Hour": 2,
+      "Attack_Category": "DDoS",
+      "flows": 5317,
+      "prev_hour_flows": 5282,
+      "delta": 35,
+      "pct_change": 0.7
+    },
+    {
+      "Hour": 3,
+      "Attack_Category": "DDoS",
+      "flows": 5309,
+      "prev_hour_flows": 5317,
+      "delta": -8,
+      "pct_change": -0.2
+    },
+    {
+      "Hour": 4,
+      "Attack_Category": "DDoS",
+      "flows": 5374,
+      "prev_hour_flows": 5309,
+      "delta": 65,
+      "pct_change": 1.2
+    },
+    {
+      "Hour": 5,
+      "Attack_Category": "DDoS",
+      "flows": 5344,
+      "prev_hour_flows": 5374,
+      "delta": -30,
+      "pct_change": -0.6
+    },
+    {
+      "Hour": 6,
+      "Attack_Category": "DDoS",
+      "flows": 5337,
+      "prev_hour_flows": 5344,
+      "delta": -7,
+      "pct_change": -0.1
+    },
+    {
+      "Hour": 7,
+      "Attack_Category": "DDoS",
+      "flows": 5319,
+      "prev_hour_flows": 5337,
+      "delta": -18,
+      "pct_change": -0.3
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "DDoS",
+      "flows": 5316,
+      "prev_hour_flows": 5319,
+      "delta": -3,
+      "pct_change": -0.1
+    },
+    {
+      "Hour": 9,
+      "Attack_Category": "DDoS",
+      "flows": 5392,
+      "prev_hour_flows": 5316,
+      "delta": 76,
+      "pct_change": 1.4
+    },
+    {
+      "Hour": 10,
+      "Attack_Category": "DDoS",
+      "flows": 5304,
+      "prev_hour_flows": 5392,
+      "delta": -88,
+      "pct_change": -1.6
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "DDoS",
+      "flows": 5331,
+      "prev_hour_flows": 5304,
+      "delta": 27,
+      "pct_change": 0.5
+    },
+    {
+      "Hour": 12,
+      "Attack_Category": "DDoS",
+      "flows": 5325,
+      "prev_hour_flows": 5331,
+      "delta": -6,
+      "pct_change": -0.1
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "DDoS",
+      "flows": 5275,
+      "prev_hour_flows": 5325,
+      "delta": -50,
+      "pct_change": -0.9
+    },
+    {
+      "Hour": 14,
+      "Attack_Category": "DDoS",
+      "flows": 5319,
+      "prev_hour_flows": 5275,
+      "delta": 44,
+      "pct_change": 0.8
+    },
+    {
+      "Hour": 15,
+      "Attack_Category": "DDoS",
+      "flows": 5424,
+      "prev_hour_flows": 5319,
+      "delta": 105,
+      "pct_change": 2.0
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "DDoS",
+      "flows": 5389,
+      "prev_hour_flows": 5424,
+      "delta": -35,
+      "pct_change": -0.6
+    },
+    {
+      "Hour": 17,
+      "Attack_Category": "DDoS",
+      "flows": 5234,
+      "prev_hour_flows": 5389,
+      "delta": -155,
+      "pct_change": -2.9
+    },
+    {
+      "Hour": 18,
+      "Attack_Category": "DDoS",
+      "flows": 5283,
+      "prev_hour_flows": 5234,
+      "delta": 49,
+      "pct_change": 0.9
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "DDoS",
+      "flows": 5429,
+      "prev_hour_flows": 5283,
+      "delta": 146,
+      "pct_change": 2.8
+    },
+    {
+      "Hour": 20,
+      "Attack_Category": "DDoS",
+      "flows": 5343,
+      "prev_hour_flows": 5429,
+      "delta": -86,
+      "pct_change": -1.6
+    },
+    {
+      "Hour": 21,
+      "Attack_Category": "DDoS",
+      "flows": 5255,
+      "prev_hour_flows": 5343,
+      "delta": -88,
+      "pct_change": -1.6
+    },
+    {
+      "Hour": 22,
+      "Attack_Category": "DDoS",
+      "flows": 5432,
+      "prev_hour_flows": 5255,
+      "delta": 177,
+      "pct_change": 3.4
+    },
+    {
+      "Hour": 23,
+      "Attack_Category": "DDoS",
+      "flows": 5326,
+      "prev_hour_flows": 5432,
+      "delta": -106,
+      "pct_change": -2.0
+    },
+    {
+      "Hour": 0,
+      "Attack_Category": "DoS",
+      "flows": 8166,
+      "prev_hour_flows": null,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 1,
+      "Attack_Category": "DoS",
+      "flows": 7931,
+      "prev_hour_flows": 8166,
+      "delta": -235,
+      "pct_change": -2.9
+    },
+    {
+      "Hour": 2,
+      "Attack_Category": "DoS",
+      "flows": 7980,
+      "prev_hour_flows": 7931,
+      "delta": 49,
+      "pct_change": 0.6
+    },
+    {
+      "Hour": 3,
+      "Attack_Category": "DoS",
+      "flows": 7989,
+      "prev_hour_flows": 7980,
+      "delta": 9,
+      "pct_change": 0.1
+    },
+    {
+      "Hour": 4,
+      "Attack_Category": "DoS",
+      "flows": 8159,
+      "prev_hour_flows": 7989,
+      "delta": 170,
+      "pct_change": 2.1
+    },
+    {
+      "Hour": 5,
+      "Attack_Category": "DoS",
+      "flows": 7874,
+      "prev_hour_flows": 8159,
+      "delta": -285,
+      "pct_change": -3.5
+    },
+    {
+      "Hour": 6,
+      "Attack_Category": "DoS",
+      "flows": 8050,
+      "prev_hour_flows": 7874,
+      "delta": 176,
+      "pct_change": 2.2
+    },
+    {
+      "Hour": 7,
+      "Attack_Category": "DoS",
+      "flows": 8117,
+      "prev_hour_flows": 8050,
+      "delta": 67,
+      "pct_change": 0.8
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "DoS",
+      "flows": 8109,
+      "prev_hour_flows": 8117,
+      "delta": -8,
+      "pct_change": -0.1
+    },
+    {
+      "Hour": 9,
+      "Attack_Category": "DoS",
+      "flows": 8018,
+      "prev_hour_flows": 8109,
+      "delta": -91,
+      "pct_change": -1.1
+    },
+    {
+      "Hour": 10,
+      "Attack_Category": "DoS",
+      "flows": 8122,
+      "prev_hour_flows": 8018,
+      "delta": 104,
+      "pct_change": 1.3
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "DoS",
+      "flows": 7922,
+      "prev_hour_flows": 8122,
+      "delta": -200,
+      "pct_change": -2.5
+    },
+    {
+      "Hour": 12,
+      "Attack_Category": "DoS",
+      "flows": 7958,
+      "prev_hour_flows": 7922,
+      "delta": 36,
+      "pct_change": 0.5
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "DoS",
+      "flows": 8152,
+      "prev_hour_flows": 7958,
+      "delta": 194,
+      "pct_change": 2.4
+    },
+    {
+      "Hour": 14,
+      "Attack_Category": "DoS",
+      "flows": 8079,
+      "prev_hour_flows": 8152,
+      "delta": -73,
+      "pct_change": -0.9
+    },
+    {
+      "Hour": 15,
+      "Attack_Category": "DoS",
+      "flows": 8088,
+      "prev_hour_flows": 8079,
+      "delta": 9,
+      "pct_change": 0.1
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "DoS",
+      "flows": 8027,
+      "prev_hour_flows": 8088,
+      "delta": -61,
+      "pct_change": -0.8
+    },
+    {
+      "Hour": 17,
+      "Attack_Category": "DoS",
+      "flows": 8275,
+      "prev_hour_flows": 8027,
+      "delta": 248,
+      "pct_change": 3.1
+    },
+    {
+      "Hour": 18,
+      "Attack_Category": "DoS",
+      "flows": 8027,
+      "prev_hour_flows": 8275,
+      "delta": -248,
+      "pct_change": -3.0
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "DoS",
+      "flows": 8101,
+      "prev_hour_flows": 8027,
+      "delta": 74,
+      "pct_change": 0.9
+    },
+    {
+      "Hour": 20,
+      "Attack_Category": "DoS",
+      "flows": 8104,
+      "prev_hour_flows": 8101,
+      "delta": 3,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 21,
+      "Attack_Category": "DoS",
+      "flows": 8120,
+      "prev_hour_flows": 8104,
+      "delta": 16,
+      "pct_change": 0.2
+    },
+    {
+      "Hour": 22,
+      "Attack_Category": "DoS",
+      "flows": 8215,
+      "prev_hour_flows": 8120,
+      "delta": 95,
+      "pct_change": 1.2
+    },
+    {
+      "Hour": 23,
+      "Attack_Category": "DoS",
+      "flows": 8162,
+      "prev_hour_flows": 8215,
+      "delta": -53,
+      "pct_change": -0.6
+    },
+    {
+      "Hour": 0,
+      "Attack_Category": "Heartbleed",
+      "flows": 1,
+      "prev_hour_flows": null,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "Heartbleed",
+      "flows": 1,
+      "prev_hour_flows": 1,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "Heartbleed",
+      "flows": 1,
+      "prev_hour_flows": 1,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 12,
+      "Attack_Category": "Heartbleed",
+      "flows": 1,
+      "prev_hour_flows": 1,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "Heartbleed",
+      "flows": 1,
+      "prev_hour_flows": 1,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "Heartbleed",
+      "flows": 1,
+      "prev_hour_flows": 1,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "Heartbleed",
+      "flows": 2,
+      "prev_hour_flows": 1,
+      "delta": 1,
+      "pct_change": 100.0
+    },
+    {
+      "Hour": 22,
+      "Attack_Category": "Heartbleed",
+      "flows": 3,
+      "prev_hour_flows": 2,
+      "delta": 1,
+      "pct_change": 50.0
+    },
+    {
+      "Hour": 0,
+      "Attack_Category": "Infiltration",
+      "flows": 1,
+      "prev_hour_flows": null,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 1,
+      "Attack_Category": "Infiltration",
+      "flows": 2,
+      "prev_hour_flows": 1,
+      "delta": 1,
+      "pct_change": 100.0
+    },
+    {
+      "Hour": 2,
+      "Attack_Category": "Infiltration",
+      "flows": 2,
+      "prev_hour_flows": 2,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 4,
+      "Attack_Category": "Infiltration",
+      "flows": 3,
+      "prev_hour_flows": 2,
+      "delta": 1,
+      "pct_change": 50.0
+    },
+    {
+      "Hour": 5,
+      "Attack_Category": "Infiltration",
+      "flows": 1,
+      "prev_hour_flows": 3,
+      "delta": -2,
+      "pct_change": -66.7
+    },
+    {
+      "Hour": 6,
+      "Attack_Category": "Infiltration",
+      "flows": 2,
+      "prev_hour_flows": 1,
+      "delta": 1,
+      "pct_change": 100.0
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "Infiltration",
+      "flows": 1,
+      "prev_hour_flows": 2,
+      "delta": -1,
+      "pct_change": -50.0
+    },
+    {
+      "Hour": 9,
+      "Attack_Category": "Infiltration",
+      "flows": 1,
+      "prev_hour_flows": 1,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 10,
+      "Attack_Category": "Infiltration",
+      "flows": 1,
+      "prev_hour_flows": 1,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "Infiltration",
+      "flows": 2,
+      "prev_hour_flows": 1,
+      "delta": 1,
+      "pct_change": 100.0
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "Infiltration",
+      "flows": 1,
+      "prev_hour_flows": 2,
+      "delta": -1,
+      "pct_change": -50.0
+    },
+    {
+      "Hour": 14,
+      "Attack_Category": "Infiltration",
+      "flows": 3,
+      "prev_hour_flows": 1,
+      "delta": 2,
+      "pct_change": 200.0
+    },
+    {
+      "Hour": 15,
+      "Attack_Category": "Infiltration",
+      "flows": 1,
+      "prev_hour_flows": 3,
+      "delta": -2,
+      "pct_change": -66.7
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "Infiltration",
+      "flows": 4,
+      "prev_hour_flows": 1,
+      "delta": 3,
+      "pct_change": 300.0
+    },
+    {
+      "Hour": 17,
+      "Attack_Category": "Infiltration",
+      "flows": 3,
+      "prev_hour_flows": 4,
+      "delta": -1,
+      "pct_change": -25.0
+    },
+    {
+      "Hour": 18,
+      "Attack_Category": "Infiltration",
+      "flows": 2,
+      "prev_hour_flows": 3,
+      "delta": -1,
+      "pct_change": -33.3
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "Infiltration",
+      "flows": 1,
+      "prev_hour_flows": 2,
+      "delta": -1,
+      "pct_change": -50.0
+    },
+    {
+      "Hour": 20,
+      "Attack_Category": "Infiltration",
+      "flows": 2,
+      "prev_hour_flows": 1,
+      "delta": 1,
+      "pct_change": 100.0
+    },
+    {
+      "Hour": 23,
+      "Attack_Category": "Infiltration",
+      "flows": 3,
+      "prev_hour_flows": 2,
+      "delta": 1,
+      "pct_change": 50.0
+    },
+    {
+      "Hour": 0,
+      "Attack_Category": "Port Scan",
+      "flows": 3734,
+      "prev_hour_flows": null,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 1,
+      "Attack_Category": "Port Scan",
+      "flows": 3739,
+      "prev_hour_flows": 3734,
+      "delta": 5,
+      "pct_change": 0.1
+    },
+    {
+      "Hour": 2,
+      "Attack_Category": "Port Scan",
+      "flows": 3762,
+      "prev_hour_flows": 3739,
+      "delta": 23,
+      "pct_change": 0.6
+    },
+    {
+      "Hour": 3,
+      "Attack_Category": "Port Scan",
+      "flows": 3844,
+      "prev_hour_flows": 3762,
+      "delta": 82,
+      "pct_change": 2.2
+    },
+    {
+      "Hour": 4,
+      "Attack_Category": "Port Scan",
+      "flows": 3781,
+      "prev_hour_flows": 3844,
+      "delta": -63,
+      "pct_change": -1.6
+    },
+    {
+      "Hour": 5,
+      "Attack_Category": "Port Scan",
+      "flows": 3777,
+      "prev_hour_flows": 3781,
+      "delta": -4,
+      "pct_change": -0.1
+    },
+    {
+      "Hour": 6,
+      "Attack_Category": "Port Scan",
+      "flows": 3736,
+      "prev_hour_flows": 3777,
+      "delta": -41,
+      "pct_change": -1.1
+    },
+    {
+      "Hour": 7,
+      "Attack_Category": "Port Scan",
+      "flows": 3796,
+      "prev_hour_flows": 3736,
+      "delta": 60,
+      "pct_change": 1.6
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "Port Scan",
+      "flows": 3709,
+      "prev_hour_flows": 3796,
+      "delta": -87,
+      "pct_change": -2.3
+    },
+    {
+      "Hour": 9,
+      "Attack_Category": "Port Scan",
+      "flows": 3672,
+      "prev_hour_flows": 3709,
+      "delta": -37,
+      "pct_change": -1.0
+    },
+    {
+      "Hour": 10,
+      "Attack_Category": "Port Scan",
+      "flows": 3814,
+      "prev_hour_flows": 3672,
+      "delta": 142,
+      "pct_change": 3.9
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "Port Scan",
+      "flows": 3881,
+      "prev_hour_flows": 3814,
+      "delta": 67,
+      "pct_change": 1.8
+    },
+    {
+      "Hour": 12,
+      "Attack_Category": "Port Scan",
+      "flows": 3754,
+      "prev_hour_flows": 3881,
+      "delta": -127,
+      "pct_change": -3.3
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "Port Scan",
+      "flows": 3827,
+      "prev_hour_flows": 3754,
+      "delta": 73,
+      "pct_change": 1.9
+    },
+    {
+      "Hour": 14,
+      "Attack_Category": "Port Scan",
+      "flows": 3818,
+      "prev_hour_flows": 3827,
+      "delta": -9,
+      "pct_change": -0.2
+    },
+    {
+      "Hour": 15,
+      "Attack_Category": "Port Scan",
+      "flows": 3794,
+      "prev_hour_flows": 3818,
+      "delta": -24,
+      "pct_change": -0.6
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "Port Scan",
+      "flows": 3766,
+      "prev_hour_flows": 3794,
+      "delta": -28,
+      "pct_change": -0.7
+    },
+    {
+      "Hour": 17,
+      "Attack_Category": "Port Scan",
+      "flows": 3724,
+      "prev_hour_flows": 3766,
+      "delta": -42,
+      "pct_change": -1.1
+    },
+    {
+      "Hour": 18,
+      "Attack_Category": "Port Scan",
+      "flows": 3838,
+      "prev_hour_flows": 3724,
+      "delta": 114,
+      "pct_change": 3.1
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "Port Scan",
+      "flows": 3803,
+      "prev_hour_flows": 3838,
+      "delta": -35,
+      "pct_change": -0.9
+    },
+    {
+      "Hour": 20,
+      "Attack_Category": "Port Scan",
+      "flows": 3822,
+      "prev_hour_flows": 3803,
+      "delta": 19,
+      "pct_change": 0.5
+    },
+    {
+      "Hour": 21,
+      "Attack_Category": "Port Scan",
+      "flows": 3776,
+      "prev_hour_flows": 3822,
+      "delta": -46,
+      "pct_change": -1.2
+    },
+    {
+      "Hour": 22,
+      "Attack_Category": "Port Scan",
+      "flows": 3657,
+      "prev_hour_flows": 3776,
+      "delta": -119,
+      "pct_change": -3.2
+    },
+    {
+      "Hour": 23,
+      "Attack_Category": "Port Scan",
+      "flows": 3870,
+      "prev_hour_flows": 3657,
+      "delta": 213,
+      "pct_change": 5.8
+    },
+    {
+      "Hour": 0,
+      "Attack_Category": "Web Attack",
+      "flows": 78,
+      "prev_hour_flows": null,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 1,
+      "Attack_Category": "Web Attack",
+      "flows": 84,
+      "prev_hour_flows": 78,
+      "delta": 6,
+      "pct_change": 7.7
+    },
+    {
+      "Hour": 2,
+      "Attack_Category": "Web Attack",
+      "flows": 88,
+      "prev_hour_flows": 84,
+      "delta": 4,
+      "pct_change": 4.8
+    },
+    {
+      "Hour": 3,
+      "Attack_Category": "Web Attack",
+      "flows": 75,
+      "prev_hour_flows": 88,
+      "delta": -13,
+      "pct_change": -14.8
+    },
+    {
+      "Hour": 4,
+      "Attack_Category": "Web Attack",
+      "flows": 94,
+      "prev_hour_flows": 75,
+      "delta": 19,
+      "pct_change": 25.3
+    },
+    {
+      "Hour": 5,
+      "Attack_Category": "Web Attack",
+      "flows": 76,
+      "prev_hour_flows": 94,
+      "delta": -18,
+      "pct_change": -19.1
+    },
+    {
+      "Hour": 6,
+      "Attack_Category": "Web Attack",
+      "flows": 75,
+      "prev_hour_flows": 76,
+      "delta": -1,
+      "pct_change": -1.3
+    },
+    {
+      "Hour": 7,
+      "Attack_Category": "Web Attack",
+      "flows": 93,
+      "prev_hour_flows": 75,
+      "delta": 18,
+      "pct_change": 24.0
+    },
+    {
+      "Hour": 8,
+      "Attack_Category": "Web Attack",
+      "flows": 83,
+      "prev_hour_flows": 93,
+      "delta": -10,
+      "pct_change": -10.8
+    },
+    {
+      "Hour": 9,
+      "Attack_Category": "Web Attack",
+      "flows": 87,
+      "prev_hour_flows": 83,
+      "delta": 4,
+      "pct_change": 4.8
+    },
+    {
+      "Hour": 10,
+      "Attack_Category": "Web Attack",
+      "flows": 104,
+      "prev_hour_flows": 87,
+      "delta": 17,
+      "pct_change": 19.5
+    },
+    {
+      "Hour": 11,
+      "Attack_Category": "Web Attack",
+      "flows": 85,
+      "prev_hour_flows": 104,
+      "delta": -19,
+      "pct_change": -18.3
+    },
+    {
+      "Hour": 12,
+      "Attack_Category": "Web Attack",
+      "flows": 98,
+      "prev_hour_flows": 85,
+      "delta": 13,
+      "pct_change": 15.3
+    },
+    {
+      "Hour": 13,
+      "Attack_Category": "Web Attack",
+      "flows": 93,
+      "prev_hour_flows": 98,
+      "delta": -5,
+      "pct_change": -5.1
+    },
+    {
+      "Hour": 14,
+      "Attack_Category": "Web Attack",
+      "flows": 93,
+      "prev_hour_flows": 93,
+      "delta": 0,
+      "pct_change": 0.0
+    },
+    {
+      "Hour": 15,
+      "Attack_Category": "Web Attack",
+      "flows": 96,
+      "prev_hour_flows": 93,
+      "delta": 3,
+      "pct_change": 3.2
+    },
+    {
+      "Hour": 16,
+      "Attack_Category": "Web Attack",
+      "flows": 84,
+      "prev_hour_flows": 96,
+      "delta": -12,
+      "pct_change": -12.5
+    },
+    {
+      "Hour": 17,
+      "Attack_Category": "Web Attack",
+      "flows": 91,
+      "prev_hour_flows": 84,
+      "delta": 7,
+      "pct_change": 8.3
+    },
+    {
+      "Hour": 18,
+      "Attack_Category": "Web Attack",
+      "flows": 106,
+      "prev_hour_flows": 91,
+      "delta": 15,
+      "pct_change": 16.5
+    },
+    {
+      "Hour": 19,
+      "Attack_Category": "Web Attack",
+      "flows": 79,
+      "prev_hour_flows": 106,
+      "delta": -27,
+      "pct_change": -25.5
+    },
+    {
+      "Hour": 20,
+      "Attack_Category": "Web Attack",
+      "flows": 90,
+      "prev_hour_flows": 79,
+      "delta": 11,
+      "pct_change": 13.9
+    },
+    {
+      "Hour": 21,
+      "Attack_Category": "Web Attack",
+      "flows": 79,
+      "prev_hour_flows": 90,
+      "delta": -11,
+      "pct_change": -12.2
+    },
+    {
+      "Hour": 22,
+      "Attack_Category": "Web Attack",
+      "flows": 92,
+      "prev_hour_flows": 79,
+      "delta": 13,
+      "pct_change": 16.5
+    },
+    {
+      "Hour": 23,
+      "Attack_Category": "Web Attack",
+      "flows": 120,
+      "prev_hour_flows": 92,
+      "delta": 28,
+      "pct_change": 30.4
+    }
+  ],
+  "ip_port_correlation": [
+    {
+      "Source IP": "192.168.100.4",
+      "total_flows": 10205,
+      "attack_flows": 10205,
+      "unique_ports_targeted": 999,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 40
+    },
+    {
+      "Source IP": "192.168.100.8",
+      "total_flows": 10138,
+      "attack_flows": 10138,
+      "unique_ports_targeted": 999,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 45
+    },
+    {
+      "Source IP": "192.168.100.5",
+      "total_flows": 10115,
+      "attack_flows": 10115,
+      "unique_ports_targeted": 999,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 41
+    },
+    {
+      "Source IP": "192.168.100.1",
+      "total_flows": 10098,
+      "attack_flows": 10098,
+      "unique_ports_targeted": 1000,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 41
+    },
+    {
+      "Source IP": "192.168.100.2",
+      "total_flows": 10093,
+      "attack_flows": 10093,
+      "unique_ports_targeted": 997,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 35
+    },
+    {
+      "Source IP": "192.168.100.9",
+      "total_flows": 10079,
+      "attack_flows": 10079,
+      "unique_ports_targeted": 999,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 45
+    },
+    {
+      "Source IP": "192.168.100.6",
+      "total_flows": 10047,
+      "attack_flows": 10047,
+      "unique_ports_targeted": 998,
+      "attack_ratio": 100.0,
+      "primary_target_port": 21,
+      "port_count": 38
+    },
+    {
+      "Source IP": "192.168.100.3",
+      "total_flows": 9984,
+      "attack_flows": 9984,
+      "unique_ports_targeted": 999,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 29
+    },
+    {
+      "Source IP": "192.168.100.7",
+      "total_flows": 9935,
+      "attack_flows": 9935,
+      "unique_ports_targeted": 998,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 62
+    },
+    {
+      "Source IP": "203.0.113.28",
+      "total_flows": 2721,
+      "attack_flows": 2721,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2721
+    },
+    {
+      "Source IP": "203.0.113.4",
+      "total_flows": 2719,
+      "attack_flows": 2719,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2719
+    },
+    {
+      "Source IP": "203.0.113.23",
+      "total_flows": 2691,
+      "attack_flows": 2691,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2691
+    },
+    {
+      "Source IP": "203.0.113.18",
+      "total_flows": 2690,
+      "attack_flows": 2690,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2690
+    },
+    {
+      "Source IP": "203.0.113.31",
+      "total_flows": 2689,
+      "attack_flows": 2689,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2689
+    },
+    {
+      "Source IP": "203.0.113.35",
+      "total_flows": 2689,
+      "attack_flows": 2689,
+      "unique_ports_targeted": 2,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2688
+    },
+    {
+      "Source IP": "203.0.113.30",
+      "total_flows": 2680,
+      "attack_flows": 2680,
+      "unique_ports_targeted": 2,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2679
+    },
+    {
+      "Source IP": "203.0.113.32",
+      "total_flows": 2676,
+      "attack_flows": 2676,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2676
+    },
+    {
+      "Source IP": "203.0.113.10",
+      "total_flows": 2658,
+      "attack_flows": 2658,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2658
+    },
+    {
+      "Source IP": "203.0.113.43",
+      "total_flows": 2656,
+      "attack_flows": 2656,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2656
+    },
+    {
+      "Source IP": "203.0.113.14",
+      "total_flows": 2653,
+      "attack_flows": 2653,
+      "unique_ports_targeted": 2,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2652
+    },
+    {
+      "Source IP": "203.0.113.29",
+      "total_flows": 2653,
+      "attack_flows": 2653,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2653
+    },
+    {
+      "Source IP": "203.0.113.48",
+      "total_flows": 2651,
+      "attack_flows": 2651,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2651
+    },
+    {
+      "Source IP": "203.0.113.41",
+      "total_flows": 2639,
+      "attack_flows": 2639,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2639
+    },
+    {
+      "Source IP": "203.0.113.27",
+      "total_flows": 2632,
+      "attack_flows": 2632,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2632
+    },
+    {
+      "Source IP": "203.0.113.34",
+      "total_flows": 2630,
+      "attack_flows": 2630,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2630
+    },
+    {
+      "Source IP": "203.0.113.22",
+      "total_flows": 2625,
+      "attack_flows": 2625,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2625
+    },
+    {
+      "Source IP": "203.0.113.45",
+      "total_flows": 2623,
+      "attack_flows": 2623,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2623
+    },
+    {
+      "Source IP": "203.0.113.49",
+      "total_flows": 2623,
+      "attack_flows": 2623,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2623
+    },
+    {
+      "Source IP": "203.0.113.21",
+      "total_flows": 2622,
+      "attack_flows": 2622,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2622
+    },
+    {
+      "Source IP": "203.0.113.25",
+      "total_flows": 2619,
+      "attack_flows": 2619,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2619
+    },
+    {
+      "Source IP": "203.0.113.44",
+      "total_flows": 2615,
+      "attack_flows": 2615,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2615
+    },
+    {
+      "Source IP": "203.0.113.5",
+      "total_flows": 2614,
+      "attack_flows": 2614,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2614
+    },
+    {
+      "Source IP": "203.0.113.12",
+      "total_flows": 2607,
+      "attack_flows": 2607,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2607
+    },
+    {
+      "Source IP": "203.0.113.16",
+      "total_flows": 2605,
+      "attack_flows": 2605,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2605
+    },
+    {
+      "Source IP": "203.0.113.3",
+      "total_flows": 2602,
+      "attack_flows": 2602,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2602
+    },
+    {
+      "Source IP": "203.0.113.19",
+      "total_flows": 2599,
+      "attack_flows": 2599,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2599
+    },
+    {
+      "Source IP": "203.0.113.46",
+      "total_flows": 2598,
+      "attack_flows": 2598,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2598
+    },
+    {
+      "Source IP": "203.0.113.38",
+      "total_flows": 2594,
+      "attack_flows": 2594,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2594
+    },
+    {
+      "Source IP": "203.0.113.7",
+      "total_flows": 2594,
+      "attack_flows": 2594,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2594
+    },
+    {
+      "Source IP": "203.0.113.17",
+      "total_flows": 2593,
+      "attack_flows": 2593,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2593
+    },
+    {
+      "Source IP": "203.0.113.37",
+      "total_flows": 2588,
+      "attack_flows": 2588,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2588
+    },
+    {
+      "Source IP": "203.0.113.47",
+      "total_flows": 2584,
+      "attack_flows": 2584,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2584
+    },
+    {
+      "Source IP": "203.0.113.40",
+      "total_flows": 2584,
+      "attack_flows": 2584,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2584
+    },
+    {
+      "Source IP": "203.0.113.20",
+      "total_flows": 2582,
+      "attack_flows": 2582,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2582
+    },
+    {
+      "Source IP": "203.0.113.11",
+      "total_flows": 2580,
+      "attack_flows": 2580,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2580
+    },
+    {
+      "Source IP": "203.0.113.39",
+      "total_flows": 2577,
+      "attack_flows": 2577,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2577
+    },
+    {
+      "Source IP": "203.0.113.2",
+      "total_flows": 2572,
+      "attack_flows": 2572,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2572
+    },
+    {
+      "Source IP": "203.0.113.15",
+      "total_flows": 2571,
+      "attack_flows": 2571,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2571
+    },
+    {
+      "Source IP": "203.0.113.9",
+      "total_flows": 2569,
+      "attack_flows": 2569,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2569
+    },
+    {
+      "Source IP": "203.0.113.8",
+      "total_flows": 2568,
+      "attack_flows": 2568,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2568
+    },
+    {
+      "Source IP": "203.0.113.36",
+      "total_flows": 2567,
+      "attack_flows": 2567,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2567
+    },
+    {
+      "Source IP": "203.0.113.1",
+      "total_flows": 2567,
+      "attack_flows": 2567,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2567
+    },
+    {
+      "Source IP": "203.0.113.24",
+      "total_flows": 2553,
+      "attack_flows": 2553,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2553
+    },
+    {
+      "Source IP": "203.0.113.13",
+      "total_flows": 2549,
+      "attack_flows": 2549,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2549
+    },
+    {
+      "Source IP": "203.0.113.33",
+      "total_flows": 2546,
+      "attack_flows": 2546,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2546
+    },
+    {
+      "Source IP": "203.0.113.26",
+      "total_flows": 2545,
+      "attack_flows": 2545,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2545
+    },
+    {
+      "Source IP": "203.0.113.6",
+      "total_flows": 2544,
+      "attack_flows": 2544,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2544
+    },
+    {
+      "Source IP": "203.0.113.42",
+      "total_flows": 2508,
+      "attack_flows": 2508,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2508
+    },
+    {
+      "Source IP": "172.16.2.13",
+      "total_flows": 2141,
+      "attack_flows": 2141,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2141
+    },
+    {
+      "Source IP": "172.16.0.8",
+      "total_flows": 2118,
+      "attack_flows": 2118,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2118
+    },
+    {
+      "Source IP": "172.16.1.3",
+      "total_flows": 2117,
+      "attack_flows": 2117,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2117
+    },
+    {
+      "Source IP": "172.16.2.10",
+      "total_flows": 2115,
+      "attack_flows": 2115,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2115
+    },
+    {
+      "Source IP": "172.16.3.18",
+      "total_flows": 2104,
+      "attack_flows": 2104,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2104
+    },
+    {
+      "Source IP": "172.16.1.15",
+      "total_flows": 2101,
+      "attack_flows": 2101,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2101
+    },
+    {
+      "Source IP": "172.16.1.1",
+      "total_flows": 2094,
+      "attack_flows": 2094,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2094
+    },
+    {
+      "Source IP": "172.16.3.6",
+      "total_flows": 2094,
+      "attack_flows": 2094,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2094
+    },
+    {
+      "Source IP": "172.16.2.19",
+      "total_flows": 2091,
+      "attack_flows": 2091,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2091
+    },
+    {
+      "Source IP": "172.16.4.9",
+      "total_flows": 2089,
+      "attack_flows": 2089,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2089
+    },
+    {
+      "Source IP": "172.16.3.5",
+      "total_flows": 2088,
+      "attack_flows": 2088,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2088
+    },
+    {
+      "Source IP": "172.16.1.4",
+      "total_flows": 2086,
+      "attack_flows": 2086,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2086
+    },
+    {
+      "Source IP": "172.16.0.6",
+      "total_flows": 2084,
+      "attack_flows": 2084,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2084
+    },
+    {
+      "Source IP": "172.16.0.2",
+      "total_flows": 2081,
+      "attack_flows": 2081,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2081
+    },
+    {
+      "Source IP": "172.16.1.2",
+      "total_flows": 2080,
+      "attack_flows": 2080,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2080
+    },
+    {
+      "Source IP": "172.16.1.13",
+      "total_flows": 2078,
+      "attack_flows": 2078,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2078
+    },
+    {
+      "Source IP": "172.16.4.19",
+      "total_flows": 2074,
+      "attack_flows": 2074,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2074
+    },
+    {
+      "Source IP": "172.16.2.2",
+      "total_flows": 2074,
+      "attack_flows": 2074,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2074
+    },
+    {
+      "Source IP": "172.16.4.8",
+      "total_flows": 2071,
+      "attack_flows": 2071,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2071
+    },
+    {
+      "Source IP": "172.16.2.1",
+      "total_flows": 2069,
+      "attack_flows": 2069,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2069
+    },
+    {
+      "Source IP": "172.16.4.3",
+      "total_flows": 2068,
+      "attack_flows": 2068,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2068
+    },
+    {
+      "Source IP": "172.16.2.12",
+      "total_flows": 2066,
+      "attack_flows": 2066,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2066
+    },
+    {
+      "Source IP": "172.16.1.10",
+      "total_flows": 2064,
+      "attack_flows": 2064,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2064
+    },
+    {
+      "Source IP": "172.16.4.15",
+      "total_flows": 2062,
+      "attack_flows": 2062,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2062
+    },
+    {
+      "Source IP": "172.16.0.10",
+      "total_flows": 2062,
+      "attack_flows": 2062,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2062
+    },
+    {
+      "Source IP": "172.16.3.7",
+      "total_flows": 2060,
+      "attack_flows": 2060,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2060
+    },
+    {
+      "Source IP": "172.16.3.13",
+      "total_flows": 2058,
+      "attack_flows": 2058,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2058
+    },
+    {
+      "Source IP": "172.16.3.17",
+      "total_flows": 2058,
+      "attack_flows": 2058,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2058
+    },
+    {
+      "Source IP": "172.16.3.11",
+      "total_flows": 2058,
+      "attack_flows": 2058,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2058
+    },
+    {
+      "Source IP": "172.16.2.5",
+      "total_flows": 2057,
+      "attack_flows": 2057,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2057
+    },
+    {
+      "Source IP": "172.16.0.19",
+      "total_flows": 2056,
+      "attack_flows": 2056,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2056
+    },
+    {
+      "Source IP": "172.16.2.17",
+      "total_flows": 2056,
+      "attack_flows": 2056,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2056
+    },
+    {
+      "Source IP": "172.16.0.1",
+      "total_flows": 2054,
+      "attack_flows": 2054,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2054
+    },
+    {
+      "Source IP": "172.16.1.6",
+      "total_flows": 2054,
+      "attack_flows": 2054,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2054
+    },
+    {
+      "Source IP": "172.16.2.11",
+      "total_flows": 2051,
+      "attack_flows": 2051,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2051
+    },
+    {
+      "Source IP": "172.16.0.15",
+      "total_flows": 2051,
+      "attack_flows": 2051,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2051
+    },
+    {
+      "Source IP": "172.16.1.16",
+      "total_flows": 2051,
+      "attack_flows": 2051,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2051
+    },
+    {
+      "Source IP": "172.16.0.4",
+      "total_flows": 2050,
+      "attack_flows": 2050,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2050
+    },
+    {
+      "Source IP": "172.16.1.19",
+      "total_flows": 2050,
+      "attack_flows": 2050,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2050
+    },
+    {
+      "Source IP": "172.16.3.9",
+      "total_flows": 2047,
+      "attack_flows": 2047,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2047
+    },
+    {
+      "Source IP": "172.16.2.3",
+      "total_flows": 2047,
+      "attack_flows": 2047,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2047
+    },
+    {
+      "Source IP": "172.16.3.10",
+      "total_flows": 2045,
+      "attack_flows": 2045,
+      "unique_ports_targeted": 1,
+      "attack_ratio": 100.0,
+      "primary_target_port": 80,
+      "port_count": 2045
+    }
+  ],
+  "severity_distribution": [
+    {
+      "Attack_Category": "Benign",
+      "Severity": "Low",
+      "count": 2146899
+    },
+    {
+      "Attack_Category": "Bot",
+      "Severity": "Medium",
+      "count": 1948
+    },
+    {
+      "Attack_Category": "Brute Force",
+      "Severity": "Medium",
+      "count": 9150
+    },
+    {
+      "Attack_Category": "DDoS",
+      "Severity": "High",
+      "count": 99380
+    },
+    {
+      "Attack_Category": "DDoS",
+      "Severity": "Critical",
+      "count": 28634
+    },
+    {
+      "Attack_Category": "DoS",
+      "Severity": "High",
+      "count": 180879
+    },
+    {
+      "Attack_Category": "DoS",
+      "Severity": "Critical",
+      "count": 12866
+    },
+    {
+      "Attack_Category": "Heartbleed",
+      "Severity": "Low",
+      "count": 11
+    },
+    {
+      "Attack_Category": "Infiltration",
+      "Severity": "Low",
+      "count": 36
+    },
+    {
+      "Attack_Category": "Port Scan",
+      "Severity": "Medium",
+      "count": 90694
+    },
+    {
+      "Attack_Category": "Web Attack",
+      "Severity": "Low",
+      "count": 2143
+    }
+  ],
+  "flow_percentiles": [
+    {
+      "Attack_Category": "Benign",
+      "p50_bytes": 4528.66,
+      "p90_bytes": 1460869.57,
+      "p99_bytes": 12333333.33,
+      "p50_duration_us": 32806,
+      "p90_duration_us": 60777967
+    },
+    {
+      "Attack_Category": "Bot",
+      "p50_bytes": 5012.42,
+      "p90_bytes": 631578.95,
+      "p99_bytes": 4000000.0,
+      "p50_duration_us": 71018,
+      "p90_duration_us": 1017097
+    },
+    {
+      "Attack_Category": "Port Scan",
+      "p50_bytes": 137931.03,
+      "p90_bytes": 428571.43,
+      "p99_bytes": 2666666.67,
+      "p50_duration_us": 50,
+      "p90_duration_us": 86
+    },
+    {
+      "Attack_Category": "Infiltration",
+      "p50_bytes": 161.41,
+      "p90_bytes": 15599.86,
+      "p99_bytes": 600000.0,
+      "p50_duration_us": 86726608,
+      "p90_duration_us": 119991834
+    },
+    {
+      "Attack_Category": "DDoS",
+      "p50_bytes": 160.1,
+      "p90_bytes": 149520.58,
+      "p99_bytes": 590352.88,
+      "p50_duration_us": 1879157,
+      "p90_duration_us": 81096672
+    },
+    {
+      "Attack_Category": "DoS",
+      "p50_bytes": 122.93,
+      "p90_bytes": 1369.27,
+      "p99_bytes": 524796.12,
+      "p50_duration_us": 85871153,
+      "p90_duration_us": 100336807
+    },
+    {
+      "Attack_Category": "Brute Force",
+      "p50_bytes": 353.8,
+      "p90_bytes": 59829.06,
+      "p99_bytes": 73298.43,
+      "p50_duration_us": 9113441,
+      "p90_duration_us": 12662108
+    },
+    {
+      "Attack_Category": "Heartbleed",
+      "p50_bytes": 66172.23,
+      "p90_bytes": 66173.62,
+      "p99_bytes": 66510.81,
+      "p50_duration_us": 119261118,
+      "p90_duration_us": 119299621
+    },
+    {
+      "Attack_Category": "Web Attack",
+      "p50_bytes": 0.0,
+      "p90_bytes": 0.0,
+      "p99_bytes": 3498.78,
+      "p50_duration_us": 5487328,
+      "p90_duration_us": 5973309
+    }
+  ]
+}

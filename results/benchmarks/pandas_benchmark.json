@@ -1,0 +1,76 @@
+{
+  "framework": "pandas",
+  "row_count": 2572640,
+  "timings_seconds": {
+    "load": 29.201,
+    "attack_distribution": 0.031,
+    "suspicious_ip": 0.767,
+    "failed_logins": 0.01,
+    "traffic_analysis": 0.088
+  },
+  "total_seconds": 30.097,
+  "results": {
+    "attack_distribution": [
+      {
+        "Attack_Category": "Benign",
+        "Count": 2146899,
+        "Percentage": 83.45
+      },
+      {
+        "Attack_Category": "DoS",
+        "Count": 193745,
+        "Percentage": 7.53
+      },
+      {
+        "Attack_Category": "DDoS",
+        "Count": 128014,
+        "Percentage": 4.98
+      },
+      {
+        "Attack_Category": "Port Scan",
+        "Count": 90694,
+        "Percentage": 3.53
+      },
+      {
+        "Attack_Category": "Brute Force",
+        "Count": 9150,
+        "Percentage": 0.36
+      },
+      {
+        "Attack_Category": "Web Attack",
+        "Count": 2143,
+        "Percentage": 0.08
+      },
+      {
+        "Attack_Category": "Bot",
+        "Count": 1948,
+        "Percentage": 0.08
+      },
+      {
+        "Attack_Category": "Infiltration",
+        "Count": 36,
+        "Percentage": 0.0
+      },
+      {
+        "Attack_Category": "Heartbleed",
+        "Count": 11,
+        "Percentage": 0.0
+      }
+    ],
+    "suspicious_ip_count": {
+      "HIGH": 218,
+      "MEDIUM": 13,
+      "LOW": 12390
+    },
+    "brute_force_count": 9150,
+    "top_brute_ports": {
+      "21": 5930,
+      "22": 3219,
+      "80": 1
+    },
+    "protocol_distribution": {
+      "6": 1635140,
+      "17": 937500
+    }
+  }
+}

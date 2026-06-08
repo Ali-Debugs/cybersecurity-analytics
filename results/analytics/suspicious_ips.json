@@ -1,0 +1,519 @@
+{
+  "attack_threshold": 10,
+  "threat_summary": [
+    {
+      "Threat_Level": "HIGH",
+      "count": 218
+    },
+    {
+      "Threat_Level": "LOW",
+      "count": 12390
+    },
+    {
+      "Threat_Level": "MEDIUM",
+      "count": 13
+    }
+  ],
+  "top_suspicious_ips": [
+    {
+      "Source IP": "192.168.100.4",
+      "TotalFlows": 10205,
+      "AttackFlows": 10205,
+      "AttackTypes": [
+        "Port Scan"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "192.168.100.8",
+      "TotalFlows": 10138,
+      "AttackFlows": 10138,
+      "AttackTypes": [
+        "Port Scan"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "192.168.100.5",
+      "TotalFlows": 10115,
+      "AttackFlows": 10115,
+      "AttackTypes": [
+        "Port Scan"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "192.168.100.1",
+      "TotalFlows": 10098,
+      "AttackFlows": 10098,
+      "AttackTypes": [
+        "Port Scan"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "192.168.100.2",
+      "TotalFlows": 10093,
+      "AttackFlows": 10093,
+      "AttackTypes": [
+        "Port Scan"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "192.168.100.9",
+      "TotalFlows": 10079,
+      "AttackFlows": 10079,
+      "AttackTypes": [
+        "Port Scan"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "192.168.100.6",
+      "TotalFlows": 10047,
+      "AttackFlows": 10047,
+      "AttackTypes": [
+        "Port Scan"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "192.168.100.3",
+      "TotalFlows": 9984,
+      "AttackFlows": 9984,
+      "AttackTypes": [
+        "Port Scan"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "192.168.100.7",
+      "TotalFlows": 9935,
+      "AttackFlows": 9935,
+      "AttackTypes": [
+        "Port Scan"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.28",
+      "TotalFlows": 2721,
+      "AttackFlows": 2721,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.4",
+      "TotalFlows": 2719,
+      "AttackFlows": 2719,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.23",
+      "TotalFlows": 2691,
+      "AttackFlows": 2691,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.18",
+      "TotalFlows": 2690,
+      "AttackFlows": 2690,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.31",
+      "TotalFlows": 2689,
+      "AttackFlows": 2689,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.35",
+      "TotalFlows": 2689,
+      "AttackFlows": 2689,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.30",
+      "TotalFlows": 2680,
+      "AttackFlows": 2680,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.32",
+      "TotalFlows": 2676,
+      "AttackFlows": 2676,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.10",
+      "TotalFlows": 2658,
+      "AttackFlows": 2658,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.43",
+      "TotalFlows": 2656,
+      "AttackFlows": 2656,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.14",
+      "TotalFlows": 2653,
+      "AttackFlows": 2653,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.29",
+      "TotalFlows": 2653,
+      "AttackFlows": 2653,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.48",
+      "TotalFlows": 2651,
+      "AttackFlows": 2651,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.41",
+      "TotalFlows": 2639,
+      "AttackFlows": 2639,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.27",
+      "TotalFlows": 2632,
+      "AttackFlows": 2632,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.34",
+      "TotalFlows": 2630,
+      "AttackFlows": 2630,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.22",
+      "TotalFlows": 2625,
+      "AttackFlows": 2625,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.49",
+      "TotalFlows": 2623,
+      "AttackFlows": 2623,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.45",
+      "TotalFlows": 2623,
+      "AttackFlows": 2623,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.21",
+      "TotalFlows": 2622,
+      "AttackFlows": 2622,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.25",
+      "TotalFlows": 2619,
+      "AttackFlows": 2619,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.44",
+      "TotalFlows": 2615,
+      "AttackFlows": 2615,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.5",
+      "TotalFlows": 2614,
+      "AttackFlows": 2614,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.12",
+      "TotalFlows": 2607,
+      "AttackFlows": 2607,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.16",
+      "TotalFlows": 2605,
+      "AttackFlows": 2605,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.3",
+      "TotalFlows": 2602,
+      "AttackFlows": 2602,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.19",
+      "TotalFlows": 2599,
+      "AttackFlows": 2599,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.46",
+      "TotalFlows": 2598,
+      "AttackFlows": 2598,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.7",
+      "TotalFlows": 2594,
+      "AttackFlows": 2594,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.38",
+      "TotalFlows": 2594,
+      "AttackFlows": 2594,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.17",
+      "TotalFlows": 2593,
+      "AttackFlows": 2593,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.37",
+      "TotalFlows": 2588,
+      "AttackFlows": 2588,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.47",
+      "TotalFlows": 2584,
+      "AttackFlows": 2584,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.40",
+      "TotalFlows": 2584,
+      "AttackFlows": 2584,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.20",
+      "TotalFlows": 2582,
+      "AttackFlows": 2582,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.11",
+      "TotalFlows": 2580,
+      "AttackFlows": 2580,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.39",
+      "TotalFlows": 2577,
+      "AttackFlows": 2577,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.2",
+      "TotalFlows": 2572,
+      "AttackFlows": 2572,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.15",
+      "TotalFlows": 2571,
+      "AttackFlows": 2571,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.9",
+      "TotalFlows": 2569,
+      "AttackFlows": 2569,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    },
+    {
+      "Source IP": "203.0.113.8",
+      "TotalFlows": 2568,
+      "AttackFlows": 2568,
+      "AttackTypes": [
+        "DDoS"
+      ],
+      "Threat_Level": "HIGH",
+      "Attack_Rate_Pct": 100.0
+    }
+  ]
+}

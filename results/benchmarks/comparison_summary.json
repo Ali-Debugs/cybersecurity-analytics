@@ -1,0 +1,43 @@
+{
+  "pandas_total_s": 30.097,
+  "spark_total_s": 16.955,
+  "overall_speedup": 1.78,
+  "row_count": 2572640,
+  "task_comparison": [
+    {
+      "Task": "Load",
+      "Pandas (s)": 29.201,
+      "Spark (s)": 7.56,
+      "Speedup (\u00d7)": 3.86,
+      "Faster": "Spark"
+    },
+    {
+      "Task": "Attack Distribution",
+      "Pandas (s)": 0.031,
+      "Spark (s)": 7.596,
+      "Speedup (\u00d7)": 0.0,
+      "Faster": "Pandas"
+    },
+    {
+      "Task": "Suspicious Ip",
+      "Pandas (s)": 0.767,
+      "Spark (s)": 0.52,
+      "Speedup (\u00d7)": 1.48,
+      "Faster": "Spark"
+    },
+    {
+      "Task": "Failed Logins",
+      "Pandas (s)": 0.01,
+      "Spark (s)": 0.196,
+      "Speedup (\u00d7)": 0.05,
+      "Faster": "Pandas"
+    },
+    {
+      "Task": "Traffic Analysis",
+      "Pandas (s)": 0.088,
+      "Spark (s)": 1.083,
+      "Speedup (\u00d7)": 0.08,
+      "Faster": "Pandas"
+    }
+  ]
+}

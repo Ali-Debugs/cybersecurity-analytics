@@ -1,0 +1,10 @@
+{
+  "timings_seconds": {
+    "Attack Distribution": 10.3,
+    "Suspicious IP": 10.28,
+    "Failed Logins": 9.31,
+    "Traffic Analysis": 11.73,
+    "Advanced Analytics": 22.15
+  },
+  "total_seconds": 67.74
+}

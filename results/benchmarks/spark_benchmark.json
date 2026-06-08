@@ -1,0 +1,54 @@
+{
+  "framework": "spark",
+  "row_count": 2572640,
+  "timings_seconds": {
+    "load": 7.56,
+    "attack_distribution": 7.596,
+    "suspicious_ip": 0.52,
+    "failed_logins": 0.196,
+    "traffic_analysis": 1.083
+  },
+  "total_seconds": 16.955,
+  "results": {
+    "attack_distribution": [
+      {
+        "Attack_Category": "Benign",
+        "count": 2146899
+      },
+      {
+        "Attack_Category": "DoS",
+        "count": 193745
+      },
+      {
+        "Attack_Category": "DDoS",
+        "count": 128014
+      },
+      {
+        "Attack_Category": "Port Scan",
+        "count": 90694
+      },
+      {
+        "Attack_Category": "Brute Force",
+        "count": 9150
+      },
+      {
+        "Attack_Category": "Web Attack",
+        "count": 2143
+      },
+      {
+        "Attack_Category": "Bot",
+        "count": 1948
+      },
+      {
+        "Attack_Category": "Infiltration",
+        "count": 36
+      },
+      {
+        "Attack_Category": "Heartbleed",
+        "count": 11
+      }
+    ],
+    "high_threat_ips": 218,
+    "brute_force_count": 9150
+  }
+}
