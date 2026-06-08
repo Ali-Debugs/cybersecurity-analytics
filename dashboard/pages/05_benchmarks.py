@@ -7,10 +7,9 @@ import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
 from dashboard.utils.data_loader import get_benchmark_summary, results_available
 
-st.set_page_config(page_title="Benchmarks", page_icon="⚡", layout="wide")
+st.set_page_config(page_title="Benchmarks", layout="wide")
 
 st.title("Performance Benchmarks")
-st.caption("Comparing Apache Spark (distributed) vs Pandas (single-threaded) on the same dataset.")
 
 BENCH_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "results", "benchmarks")
 if not os.path.exists(os.path.join(BENCH_DIR, "comparison_summary.json")):
@@ -70,18 +69,3 @@ if tasks:
     df_t = pd.DataFrame(tasks)
     st.dataframe(df_t, use_container_width=True, hide_index=True)
 
-st.divider()
-st.subheader("Why Pandas is Faster on Small Data — A PDC Insight")
-st.info("""
-On this 200k-row dataset, Pandas is faster. That's expected and is itself a key PDC concept:
-
-**Spark has overhead costs** — JVM startup, task scheduling, serialisation between driver and executors, HDFS network I/O.
-For small datasets this overhead outweighs the parallelism benefit.
-
-**At scale (10M+ rows, multi-node cluster), Spark wins decisively** because:
-- Data is split into partitions and processed on many nodes simultaneously
-- A single Pandas process would run out of RAM; Spark streams from HDFS
-- Spark's DAG optimiser eliminates redundant passes over the data
-
-This project uses `local[*]` mode (all cores, 1 machine) — the same code runs unchanged on a 1000-node cluster.
-""")

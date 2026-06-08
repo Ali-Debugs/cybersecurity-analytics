@@ -7,10 +7,9 @@ import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
 from dashboard.utils.data_loader import get_suspicious_ips, results_available
 
-st.set_page_config(page_title="Suspicious IPs", page_icon="🔍", layout="wide")
+st.set_page_config(page_title="Suspicious IPs", layout="wide")
 
 st.title("Suspicious IP Analysis")
-st.caption("Source IPs flagged by Spark based on attack flow count.")
 
 if not results_available():
     st.warning("No results found. Run analytics first.")

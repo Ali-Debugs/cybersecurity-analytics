@@ -7,7 +7,7 @@ import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
 from dashboard.utils.data_loader import get_failed_logins, get_traffic_analysis, results_available
 
-st.set_page_config(page_title="Threat Analytics", page_icon="🎯", layout="wide")
+st.set_page_config(page_title="Threat Analytics", layout="wide")
 
 st.title("Threat Analytics")
 

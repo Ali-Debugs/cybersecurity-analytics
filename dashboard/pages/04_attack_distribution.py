@@ -7,10 +7,9 @@ import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", ".."))
 from dashboard.utils.data_loader import get_attack_distribution, results_available
 
-st.set_page_config(page_title="Attack Distribution", page_icon="📈", layout="wide")
+st.set_page_config(page_title="Attack Distribution", layout="wide")
 
 st.title("Attack Distribution")
-st.caption("Breakdown of attack types from the CICIDS2017 dataset, processed by Apache Spark.")
 
 if not results_available():
     st.warning("No results found. Run analytics first.")

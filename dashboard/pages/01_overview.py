@@ -9,7 +9,7 @@ from dashboard.utils.data_loader import (
     get_failed_logins, get_traffic_analysis, results_available
 )
 
-st.set_page_config(page_title="Overview", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Overview", layout="wide")
 
 st.title("Overview")
 
